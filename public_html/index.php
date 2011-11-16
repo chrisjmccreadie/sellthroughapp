@@ -7,18 +7,19 @@ $database="sellthroughapp";
 mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
-$query="SELECT * FROM sellthrough";
+$query="SELECT * FROM `sellthrough` group by style, name order by name";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 
 $i=0;
+echo "<table>";
 while ($i < $num) {
-
-echo "yay";
-
-$i++;
+    echo "<tr>";
+    echo "<td>".mysql_result($result,$i,"style")."</td>";
+    echo "</tr>";
+    $i++;
 }
-
+echo "</table>";
 mysql_close();
 
 ?>
