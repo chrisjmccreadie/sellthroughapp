@@ -14,11 +14,15 @@ $num=mysql_numrows($result);
 $i=0;
 echo "Customers</br>";
 echo "<table>";
-echo "<tr><td>Customer Name</td><td>URL</td></tr>";
+echo "<tr><td>Customer Name</td><td>URL</td><td>Complete</td></tr>";
 
 while ($i < $num) {
     echo "<tr>";
-    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=".mysql_result($result,$i,"name")."'>URL</a></td>";
+    if (mysql_result($result,$i,"added") == 0)
+        $complete = "No";
+    else
+        $complete = "Yes";
+    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=".mysql_result($result,$i,"name")."'>URL</a></td><td>$complete</td>";
     echo "</tr>";
     $i++;
 }
