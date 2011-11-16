@@ -18,7 +18,7 @@ echo "<table>";
 echo "<tr><td>Style</td><td>Number Sold</td></tr>";
 while ($i < $num) {
     echo "<tr>";
-    echo "<td>".mysql_result($result,$i,"style")."</td><td><input type="text" name="num$i" /></td>";
+    echo "<td>".mysql_result($result,$i,"style")."</td><td><input type='text' name='num$i' /></td>";
     echo "</tr>";
     $i++;
 }
