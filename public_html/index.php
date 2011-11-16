@@ -14,9 +14,11 @@ $num=mysql_numrows($result);
 $i=0;
 echo "Customers</br>";
 echo "<table>";
+echo "<tr><td>Customer Name</td><td>URL</td></tr>";
+
 while ($i < $num) {
     echo "<tr>";
-    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=PIOS'>URL</a></td>";
+    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=".mysql_result($result,$i,"name")."'>URL</a></td>";
     echo "</tr>";
     $i++;
 }
