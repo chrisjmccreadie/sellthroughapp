@@ -24,6 +24,7 @@ while ($i < $num) {
     $i++;
 }
 echo "</table>";
+echo '<input type="submit" value="Submit" />';
 mysql_close();
 
 ?>
