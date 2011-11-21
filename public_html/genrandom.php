@@ -7,7 +7,7 @@ $database="sellthroughapp";
 mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
-$query="SELECT * FROM `sellthrough` group by  name where rcode = 0";
+$query="SELECT * FROM `sellthrough`  where rcode = 0 group by  name ";
 $result=mysql_query($query);
 echo mysql_error();
 $num=mysql_numrows($result);
