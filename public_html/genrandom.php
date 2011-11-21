@@ -9,6 +9,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //close the database 
 $query="SELECT * FROM `sellthrough` group by  name where rcode = 0";
 $result=mysql_query($query);
+echo mysql_error();
 $num=mysql_numrows($result);
 while ($i < $num) {
     $n = rand(0, 10000000);
