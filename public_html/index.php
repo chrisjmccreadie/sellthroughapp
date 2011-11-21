@@ -14,7 +14,7 @@ $num=mysql_numrows($result);
 $i=0;
 echo "Customers</br>";
 echo "<table>";
-echo "<tr><td>Customer Name</td><td>URL</td><td>Complete</td></tr>";
+echo "<tr><td>Customer Name</td><td>URL</td><td>Complete</td><td>Name</td><td>Email Address</td><td>Action</td></tr>";
 
 while ($i < $num) {
     echo "<tr>";
@@ -22,8 +22,11 @@ while ($i < $num) {
         $complete = "No";
     else
         $complete = "Yes";
-    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=".mysql_result($result,$i,"name")."'>URL</a></td><td>$complete</td>";
-    echo "</tr>";
+    echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?customer=".mysql_result($result,$i,"name")."'>URL</a></td><td>$complete</td><td><input type='text' name='name' /></td><td><input type='text' name='email' /></td><td><input type='submit' value='Submit' />
+</td>";
+     
+
+echo "</tr>";
     $i++;
 }
 echo "</table>";
