@@ -1,4 +1,4 @@
-<php
+<?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
 $username="sellthroughapp";
@@ -17,9 +17,10 @@ while ($i < $num) {
         //update the database
         $query="update  `sellthrough` set rcode ='$n' where name = '".mysql_result($result,$i,"name")."'";
         $result2=mysql_query($query2);
+        echo mysql_error();
         $i++;
     }
 }
-
+echo "done";
 
 ?>
