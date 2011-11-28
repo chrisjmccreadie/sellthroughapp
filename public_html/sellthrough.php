@@ -7,11 +7,11 @@ function updatesell()
  
             //add only if the value is number
             if(!isNaN(this.value) && this.value.length!=0) {
-                alert(this.value);
+                alert(this.value+' : '+this.id);
             }
  
-        });
-alert("yay");
+        }); 
+        return false;
 }
 </script>
 <body>
