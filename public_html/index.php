@@ -19,7 +19,7 @@ echo "<tr><td>Customer Name</td><td>URL</td><td>Complete</td><td>Name</td><td>Em
 
 while ($i < $num) {
     echo "<tr>";
-    $email  = mmysql_result($result,$i,"email");
+    $email  = mysql_result($result,$i,"email");
     if (mysql_result($result,$i,"added") == 0)
         $complete = "No";
     else
