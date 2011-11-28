@@ -1,3 +1,3 @@
 <?php
-echo $_GET['data'];
+print_r( $_GET);
 ?>
