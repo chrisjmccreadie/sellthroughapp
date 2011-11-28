@@ -35,7 +35,7 @@ $.get("update.php?data=", dataString,
 }
 </script>
 <body>
-<form name="form1" id="form1">
+<form name="form1" id="form1" action="updateit.php" method="POST">
 <?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
@@ -67,6 +67,8 @@ while ($i < $num) {
 }
 echo "</table>";
 echo '<input type="button" value="Submit" onclick="updatesell()"/>';
+echo '<input type="submit" value="Submit"/>';
+
 mysql_close();
 
 ?>
