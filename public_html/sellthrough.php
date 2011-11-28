@@ -16,7 +16,7 @@ function updatesell()
         alert(data);
         $.ajax({
   url: 'update.php',
-  
+  data: data,
   success: function(data) {
 
     alert(data);
