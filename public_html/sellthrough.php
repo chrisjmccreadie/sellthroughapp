@@ -19,13 +19,13 @@ function updatesell()
         }
  
         }); 
-    dataString  = '}';
+    dataString  = dataString+'}';
 
 alert(dataString);
         
 
 
-$.get("update.php", { name: "John", time: "2pm" },
+$.get("update.php", dataString,
    function(data){
      alert("Data Loaded: " + data);
    });
