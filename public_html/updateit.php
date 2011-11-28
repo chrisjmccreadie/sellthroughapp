@@ -1,9 +1,7 @@
 <?php
 print_r($_POST);
-
-
 foreach ($_POST as $k => $v) {
-    echo "\$a[$k] => $v.\n";
+    echo "$k : $v\n";
 }
 exit;
 //fecth a list of urls mysql_connect(localhost,$username,$password);
