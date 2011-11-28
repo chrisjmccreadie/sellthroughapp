@@ -1,4 +1,4 @@
 <?php
-echo "kk".$_GET['Data'];
-print_r( $_GET['Data']);
+echo "kk".$_GET['data'];
+print_r( $_GET);
 ?>
