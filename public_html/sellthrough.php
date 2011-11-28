@@ -11,6 +11,14 @@ function updatesell()
             }
  
         }); 
+        
+        $.ajax({
+  url: 'udpate.php',
+  success: function(data) {
+
+    alert(data);
+  }
+});
         return false;
 }
 </script>
