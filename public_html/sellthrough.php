@@ -60,7 +60,7 @@ while ($i < $num) {
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
     
-        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='txt' id='$id' class='txt' /></td>";
+        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='$id' id='$id' class='txt' /></td>";
         echo "</tr>";
     }
     $i++;
