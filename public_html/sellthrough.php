@@ -3,11 +3,19 @@
 <script type="text/javascript">
 function updatesell()
 {
-    
+     $(".txt").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                alert(this.value);
+            }
+ 
+        });
 alert("yay");
 }
 </script>
 <body>
+<form name="form1" id="form1">
 <?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
@@ -32,7 +40,7 @@ while ($i < $num) {
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
     
-        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='$id' id='$id' /></td>";
+        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='$id' id='$id' class='txt' /></td>";
         echo "</tr>";
     }
     $i++;
@@ -42,5 +50,6 @@ echo '<input type="submit" value="Submit" onclick="updatesell()"/>';
 mysql_close();
 
 ?>
+</form>
 </body>
 </html>
