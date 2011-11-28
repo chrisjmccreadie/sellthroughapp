@@ -15,7 +15,7 @@ while ($i < $num) {
     $n = rand(0, 10000000);
     if (!in_array($n, $rn)) {
         $rn[] = $n;
-        $url = "http://sellthroughapp.fluxflex.com/sellthrough.php?rcode="+$n;
+        $url = "http://sellthroughapp.fluxflex.com/sellthrough.php?rcode=".$n;
         //update the database
         $name = mysql_result($result,$i,"name");
         $name = str_replace("'","''",$name);
