@@ -1,10 +1,10 @@
 <html>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js?ver=3.1.2'></script>
 <script type="text/javascript">
-function updatesell(id)
+function updatesell()
 {
     
-alert("yay"+id);
+alert("yay");
 }
 </script>
 <body>
@@ -37,7 +37,7 @@ while ($i < $num) {
     $i++;
 }
 echo "</table>";
-echo '<input type="submit" value="Submit" onclick="updatesell('1')"/>';
+echo '<input type="submit" value="Submit" onclick="updatesell()"/>';
 mysql_close();
 
 ?>
