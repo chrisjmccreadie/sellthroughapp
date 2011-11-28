@@ -13,7 +13,7 @@ function updatesell()
         }); 
         
         $.ajax({
-  url: 'udpate.php',
+  url: 'update.php',
   success: function(data) {
 
     alert(data);
