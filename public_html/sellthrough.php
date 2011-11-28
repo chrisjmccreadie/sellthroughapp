@@ -14,14 +14,15 @@ function updatesell()
  
         }); 
         alert(data);
-        $.ajax({
-  url: 'update.php',
-  data: data,
-  success: function(data) {
+        
 
-    alert(data);
-  }
-});
+
+$.get("update.php", { name: "John", time: "2pm" },
+   success: function(data){
+     alert("Data Loaded: " + data);
+   });
+
+     
         return false;
 }
 </script>
