@@ -66,7 +66,6 @@ while ($i < $num) {
     $i++;
 }
 echo "</table>";
-echo '<input type="button" value="Submit" onclick="updatesell()"/>';
 echo '<input type="submit" value="Submit"/>';
 
 mysql_close();
