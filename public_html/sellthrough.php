@@ -18,7 +18,7 @@ function updatesell()
 
 
 $.get("update.php", { name: "John", time: "2pm" },
-   success: function(data){
+   function(data){
      alert("Data Loaded: " + data);
    });
 
