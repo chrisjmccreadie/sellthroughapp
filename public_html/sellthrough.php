@@ -14,7 +14,8 @@ function updatesell()
         }); 
         alert(data);
         $.ajax({
-  url: 'update.php?data'+data,
+  url: 'update.php',
+  
   success: function(data) {
 
     alert(data);
