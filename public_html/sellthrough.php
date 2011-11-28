@@ -3,17 +3,25 @@
 <script type="text/javascript">
 function updatesell()
 {
-    data  = '';
+    dataString  = '{';
+    i=0;
      $(".txt").each(function() {
  
             //add only if the value is number
             if(!isNaN(this.value) && this.value.length!=0) {
                 //alert(this.value+' : '+this.id);
-                data = data+'|'+this.value+':'+this.id;
-            }
+                if(i == 0)
+                    dataString = dataString+'this.value+':'+this.id+'';
+                else
+                    dataString = dataString+',this.value+':'+this.id+'';
+
+        i++;
+        }
  
         }); 
-        alert(data);
+    dataString  = '}';
+
+alert(data);
         
 
 
