@@ -16,8 +16,8 @@ $num=mysql_numrows($result);
 $i=0;
 echo "<table>";
 echo "<tr><td>Style</td><td>Quantity</td><td>Colour</td><td>Price</td><td>Number Sold</td></tr>";
-while ($i < $num) {git
-    if (mysql_result($result,$i,"quantity") > 0)
+while ($i < $num) {
+    if (mysql_result($result,$i,"quantity") != '0')
     {
         echo "<tr>";
     
