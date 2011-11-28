@@ -7,13 +7,14 @@ function updatesell()
  
             //add only if the value is number
             if(!isNaN(this.value) && this.value.length!=0) {
-                alert(this.value+' : '+this.id);
+                //alert(this.value+' : '+this.id);
+                data = data+'|'+this.value+':'+this.id;
             }
  
         }); 
-        
+        alert(data);
         $.ajax({
-  url: 'update.php',
+  url: 'update.php?data'+data,
   success: function(data) {
 
     alert(data);

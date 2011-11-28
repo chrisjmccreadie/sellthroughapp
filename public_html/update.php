@@ -1,3 +1,3 @@
 <?php
-echo "ok";
+echo $_GET['data'];
 ?>
