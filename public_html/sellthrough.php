@@ -11,9 +11,9 @@ function updatesell()
             if(!isNaN(this.value) && this.value.length!=0) {
                 //alert(this.value+' : '+this.id);
                 if(i == 0)
-                    dataString = dataString+'this.value+':'+this.id+'';
+                    dataString = dataString+this.value+':'+this.id;
                 else
-                    dataString = dataString+',this.value+':'+this.id+'';
+                    dataString = dataString+','+this.value+':'+this.id;
 
         i++;
         }
