@@ -3,6 +3,7 @@
 <script type="text/javascript">
 function updatesell()
 {
+    data  = '';
      $(".txt").each(function() {
  
             //add only if the value is number
