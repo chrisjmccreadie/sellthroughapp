@@ -25,7 +25,7 @@ alert(dataString);
         
 
 
-$.get("update.php", dataString,
+$.get("update.php?data=", dataString,
    function(data){
      alert("Data Loaded: " + data);
    });
