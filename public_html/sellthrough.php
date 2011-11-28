@@ -29,9 +29,10 @@ echo "<tr><td>Style</td><td>Quantity</td><td>Colour</td><td>Price</td><td>Number
 while ($i < $num) {
     if (mysql_result($result,$i,"quantity") != '0')
     {
+        $id = mysql_result($result,$i,"id");
         echo "<tr>";
     
-        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='num$i' /></td>";
+        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"quantity")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"price")."</td><td><input type='text' name='$id' id='$id' /></td>";
         echo "</tr>";
     }
     $i++;
