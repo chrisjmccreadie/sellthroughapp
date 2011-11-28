@@ -20,7 +20,7 @@ while ($i < $num) {
         $name = mysql_result($result,$i,"name");
         $name = str_replace("'","''",$name);
         echo $name."</br>";
-        $query2="update  `sellthrough` set rcode ='$n',url='$url' where name = '".$name."'";
+        $query2="update  `sellthrough2` set rcode ='$n',url='$url' where name = '".$name."'";
         $result2=mysql_query($query2);
         echo mysql_error();
         $i++;
