@@ -1,4 +1,6 @@
 <?php
 echo "kk".$_GET['data'];
-print_r( $_GET);
+$var = implode($_GET);
+echo $var;
+//print_r( $_GET);
 ?>
