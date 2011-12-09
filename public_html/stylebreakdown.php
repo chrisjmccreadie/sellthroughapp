@@ -18,7 +18,7 @@ $out =  "<table><tr>";
 $i = 0;
 while ($i < $num)
 {
-        $out = $out."<td>".mysql_result($result,$i,"country")."</td>";
+        $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
     $i++;   
 }
 echo $out."</tr></table>";
