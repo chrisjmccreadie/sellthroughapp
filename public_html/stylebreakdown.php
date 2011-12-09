@@ -23,7 +23,7 @@ while ($i < $num)
         $out = $out."<th>%</th>";
     $i++;   
 }
-print_r($country);
+//print_r($country);
 
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
