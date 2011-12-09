@@ -8,6 +8,17 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
 
+
+$query "select country from sellthrough2 group by country";
+$result=mysql_query($query);
+while ($i < $num)
+{
+        //$out = $out."<td>".mysql_result($result,$i,"country")."</td>";
+    echo "<td>".mysql_result($result,$i,"country");
+
+    $i++;   
+}
+
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
 FROM  `sellthrough2` 
