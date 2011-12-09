@@ -12,6 +12,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
 while ($i < $num)
+{
     echo mysql_result($result,$i,"style");
     $i++;
 }
