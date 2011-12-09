@@ -7,12 +7,13 @@ $database="sellthroughapp";
 mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
+
+//new query
 $query="SELECT style, country, COUNT( country) AS ccount
 FROM  `sellthrough2` 
 GROUP BY country,style
 ORDER BY style,country
 ";
-
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
