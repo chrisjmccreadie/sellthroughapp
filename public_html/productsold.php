@@ -13,7 +13,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
 $out =  "<table>";
-$out = $out. "<tr><td>Name</td><td>Style<td/><td>Size</td><td>Price</td><td>Bought</td><td>Sold</td><tr>";
+$out = $out. "<tr><td>Name</td><td>Style</td><td>Size</td><td>Price</td><td>Bought</td><td>Sold</td><tr>";
 while ($i < $num)
 {
     $out = $out. "<tr><td>";
