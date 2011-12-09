@@ -12,6 +12,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 $query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
 $out =  "<table>";
+
 $i = 0;
 while ($i < $num)
 {
@@ -19,7 +20,7 @@ while ($i < $num)
     $i++;   
 }
 echo $out."</table>";
-
+echo "end of country";
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
 FROM  `sellthrough2` 
