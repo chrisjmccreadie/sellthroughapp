@@ -13,15 +13,15 @@ $query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 
-$out =  "<table>";
+$out =  "<table><tr>";
 
 $i = 0;
 while ($i < $num)
 {
-        $out = $out."<tr><td>".mysql_result($result,$i,"country")."</td</tr>";
+        $out = $out."<td>".mysql_result($result,$i,"country")."</td>";
     $i++;   
 }
-echo $out."</table>";
+echo $out."</tr></table>";
 echo "end of country";
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
