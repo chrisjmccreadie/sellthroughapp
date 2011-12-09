@@ -18,7 +18,7 @@ $out =  "<table><tr>";
 $country = array();
 while ($i < $num)
 {
-        $country[mysql_result($result,$i,"country")];
+        $country[] = mysql_result($result,$i,"country");
         $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
         $out = $out."<th>%</th>";
     $i++;   
