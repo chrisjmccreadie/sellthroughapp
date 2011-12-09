@@ -15,15 +15,16 @@ $num=mysql_numrows($result);
 
 $out =  "<table><tr>";
 
-$i = 0;
+$country = array();
 while ($i < $num)
 {
+        $country[mysql_result($result,$i,"country")];
         $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
         $out = $out."<th>%</th>";
     $i++;   
 }
-echo $out."</tr></table>";
-echo "end of country";
+print_r($country);
+
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
 FROM  `sellthrough2` 
@@ -33,7 +34,6 @@ ORDER BY style,country
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
-$out =  "<table>";
 $out = $out. "<tr><td>Style</td><td>Country<td/><td>Count</td></tr>";
 while ($i < $num)
 {
@@ -45,7 +45,7 @@ while ($i < $num)
     $i++;
 //count
 }
-echo $out;
+echo $out."</table>";
 
 
 
