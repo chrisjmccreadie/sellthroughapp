@@ -9,7 +9,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //close the database 
 
 
-$query "select country from sellthrough2 group by country";
+$query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
 $out =  "<table>";
 $i = 0;
