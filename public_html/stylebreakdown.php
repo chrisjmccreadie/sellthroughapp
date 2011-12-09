@@ -11,13 +11,14 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 
 $query "select country from sellthrough2 group by country";
 $result=mysql_query($query);
+$out =  "<table>";
+$i = 0;
 while ($i < $num)
 {
-        //$out = $out."<td>".mysql_result($result,$i,"country")."</td>";
-    echo "<td>".mysql_result($result,$i,"country");
-
+        $out = $out."<tr><td>".mysql_result($result,$i,"country")."</td</tr>";
     $i++;   
 }
+echo $out."</table>";
 
 //new query
 $query="SELECT style, country, COUNT( country) AS ccount
