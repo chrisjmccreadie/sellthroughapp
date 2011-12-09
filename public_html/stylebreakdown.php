@@ -25,7 +25,7 @@ while ($i < $num)
     $i++;
 //count
 }
-
+echo $out;
 
 
 
