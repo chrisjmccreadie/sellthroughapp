@@ -19,6 +19,7 @@ $i = 0;
 while ($i < $num)
 {
         $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
+        $out = $out."<th>%</th>";
     $i++;   
 }
 echo $out."</tr></table>";
