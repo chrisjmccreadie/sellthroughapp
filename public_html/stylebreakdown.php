@@ -11,6 +11,8 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 
 $query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
+$num=mysql_numrows($result);
+
 $out =  "<table>";
 
 $i = 0;
