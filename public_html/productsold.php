@@ -22,7 +22,7 @@ while ($i < $num)
     $out = $out."<td>". mysql_result($result,$i,"size")."</td>";
         $out = $out."<td>". mysql_result($result,$i,"price")."</td>";
         $out = $out."<td>". mysql_result($result,$i,"bought")."</td>";
-            $out = $out."<td>". mysql_result($result,$i,"sold)."</td>";
+            $out = $out."<td>". mysql_result($result,$i,"sold")."</td>";
     $out = $out. "<td></tr>";
     $i++;
 //count
