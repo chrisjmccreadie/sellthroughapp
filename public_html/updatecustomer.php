@@ -13,10 +13,11 @@ foreach ($_POST as $k => $v) {
     $query="update `sellthroughapp`.`sellthrough2` set `quantity` ='$v' where id = '$k'";
     $result=mysql_query($query);
     echo mysql_error();
-    header('Location: index.php');
 
     //update they have been added
 }
+    header('Location: index.php');
+
 echo "Thank you";
 
 ?>
