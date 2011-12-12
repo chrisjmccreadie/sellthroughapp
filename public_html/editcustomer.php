@@ -47,7 +47,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //close the database 
 $customer = $_GET["id"];
 //echo $customer;
-$query="SELECT * FROM `sellthrough2` where id = '$customer'  order by style";
+$query="SELECT * FROM `sellthrough2` where name = '$customer'  order by style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 

@@ -24,7 +24,7 @@ while ($i < $num) {
         $complete = "No";
     else
         $complete = "Yes";
-   echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?rcode=".mysql_result($result,$i,"rcode")."'>URL</a></td><td>$complete</td><td><input type='text' name='name' /></td><td><input type='text' name='email' value='$email' /></td><td><a href='editcustomer.php?id=".mysql_result($result,$i,"id")."'>Edit Bought </a><input type='submit' value='Submit' />
+   echo "<td>".mysql_result($result,$i,"name")."</td><td><a href='sellthrough.php?rcode=".mysql_result($result,$i,"rcode")."'>URL</a></td><td>$complete</td><td><input type='text' name='name' /></td><td><input type='text' name='email' value='$email' /></td><td><a href='editcustomer.php?id=".mysql_result($result,$i,"name")."'>Edit Bought </a><input type='submit' value='Submit' />
 </td>";
      
 
