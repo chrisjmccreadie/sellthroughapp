@@ -26,7 +26,7 @@ while ($i < $num)
     $i++;   
 }
 //echo "wah ";
-//print_r($country);
+print_r($country);
 
 
 $query="SELECT style, country, COUNT( country) AS ccount
