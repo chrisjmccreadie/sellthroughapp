@@ -34,6 +34,7 @@ FROM  `sellthrough2`
 GROUP BY country,style
 ORDER BY style,country
 ";
+
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
@@ -42,7 +43,8 @@ while ($i < $num)
     //loop till we find the country
     foreach($country as $item )
     {
-       // echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
+        if (mysql_result($result,$i,"country") == "$item["country"])
+             echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
     }
     $i++;
 }
