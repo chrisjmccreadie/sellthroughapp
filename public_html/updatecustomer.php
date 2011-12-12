@@ -10,7 +10,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //print_r($_POST);
 foreach ($_POST as $k => $v) {
     echo "$k : $v";
-    $query="update `sellthroughapp`.`sellthroughapp2` values `quantity` ='$v' where id = '$k'";
+    $query="update `sellthroughapp`.`sellthrough2` set `quantity` ='$v' where id = '$k'";
     $result=mysql_query($query);
     echo mysql_error();
     //update they have been added
