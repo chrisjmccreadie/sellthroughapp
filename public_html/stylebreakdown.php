@@ -25,8 +25,28 @@ while ($i < $num)
         $out = $out."<th>%</th>";
     $i++;   
 }
-echo "wah ";
-print_r($country);
+//echo "wah ";
+//print_r($country);
+
+
+$query="SELECT style, country, COUNT( country) AS ccount
+FROM  `sellthrough2` 
+GROUP BY country,style
+ORDER BY style,country
+";
+$result=mysql_query($query);
+$num=mysql_numrows($result);
+$i = 0;
+$countrycount = count
+while ($i < $num)
+{
+    //loop till we find the country
+    foreach($country as $item )
+    {
+        echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
+    }
+    $i++;
+}
 exit;
 
 
