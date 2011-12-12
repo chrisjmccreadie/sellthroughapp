@@ -44,7 +44,7 @@ while ($i < $num)
     //loop till we find the country
     foreach($country as $item )
     {
-        if (mysql_result($result,$i,"country") == "$item["country"])
+        if (mysql_result($result,$i,"country") == $item["country"])
              echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
     }
     $i++;
