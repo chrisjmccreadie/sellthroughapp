@@ -17,6 +17,7 @@ $out =  "<table><tr>";
 
 $country = array();
 $i = 0;
+$out = $out."<th>Name</th>";
 while ($i < $num)
 {
   //  echo  mysql_result($result,$i,"country")."</br>";
