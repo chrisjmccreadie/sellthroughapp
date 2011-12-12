@@ -3,7 +3,7 @@
     <head>
 
 <style type="text/css" title="currentStyle">
-    		@import "http://www.datatables.net/release-datatables/media/css/demo_page.css"; @import "http://www.datatables.net/release-datatables/media/css/header.ccss";
+        	@import "http://www.datatables.net/release-datatables/media/css/demo_page.css"; @import "http://www.datatables.net/release-datatables/media/css/header.ccss";
 			@import "http://www.datatables.net/release-datatables/media/css/demo_table.css";
 		</style>
 <script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.js"></script>
@@ -45,7 +45,7 @@ while ($i < $num)
         $out = $out."<th>%</th>";
     $i++;   
 }
-$out = $out."</tr></thead><tbody>";
+$out = $out."<th>Total</th></tr></thead><tbody>";
 //echo "wah ";
 //print_r($country);
 
@@ -58,7 +58,7 @@ ORDER BY style,country
 
 $result=mysql_query($query);
 $num=mysql_numrows($result);
-echo "$num";
+//echo "$num";
 $i = 0;
 $style = "";
 while ($i < $num)
@@ -69,7 +69,11 @@ while ($i < $num)
         {
             //reset the vars
             $out = $out."<tr class=\"odd gradeX\"><td>$style</td>";
-            
+            $total = 0;
+            foreach($country as $item )
+            {
+                $total = $total+$item["count"]  ;
+            }
             foreach($country as $item )
             {
                 $per = 0;
@@ -78,7 +82,7 @@ while ($i < $num)
                 
                 $item["count"] = 0;   
             }
-            $out = $out."</tr>";
+            $out = $out."<td>$total</td></tr>";
             
         }
         switch (mysql_result($result,$i,"country")) 
