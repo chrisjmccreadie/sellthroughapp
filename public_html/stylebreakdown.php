@@ -78,7 +78,7 @@ while ($i < $num)
             {
                 $per = 0;
                 $out = $out."<td>".$item["count"]."</td>";
-                $per = $total /100 * $item["count"];
+                $per = $item["count"] /$total * 100;
                 $out = $out."<td>".$per."%</td>";
                 $item["count"] = 0;   
             }
