@@ -39,11 +39,12 @@ ORDER BY style,country
 
 $result=mysql_query($query);
 $num=mysql_numrows($result);
+echo "$num";
 $i = 0;
 $style = ""
 while ($i < $num)
 {
-    echo "jjj";
+    ///echo "jjj";
     $i++;
 }
 echo $out;
