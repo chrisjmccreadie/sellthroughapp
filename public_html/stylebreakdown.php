@@ -42,11 +42,7 @@ $num=mysql_numrows($result);
 echo "$num";
 $i = 0;
 $style = ""
-while ($i < $num)
-{
-    ///echo "jjj";
-    $i++;
-}
+
 echo $out;
 exit;
 
