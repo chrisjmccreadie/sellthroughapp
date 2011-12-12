@@ -42,7 +42,7 @@ while ($i < $num)
         $out = $out."<th>%</th>";
     $i++;   
 }
-$out = $out."</tr>";
+$out = $out."</tr></thead><tbody>";
 //echo "wah ";
 //print_r($country);
 
@@ -65,7 +65,7 @@ while ($i < $num)
         if ($style != "")
         {
             //reset the vars
-            $out = $out."<tr><td>$style</td>";
+            $out = $out."<tr class=\"odd gradeX\"><td>$style</td>";
             
             foreach($country as $item )
             {
@@ -182,7 +182,7 @@ while ($i < $num)
     }
     $i++;
 }
-echo "</table>".$out;
+echo $out."</tbody></table>";
 ?>
 </body>
 </html>
