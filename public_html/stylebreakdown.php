@@ -2,7 +2,10 @@
 <html>
     <head>
 
-
+<style type="text/css" title="currentStyle">
+    		@import "http://www.datatables.net/release-datatables/media/css/demo_page.css"; @import "http://www.datatables.net/release-datatables/media/css/header.ccss";
+			@import "http://www.datatables.net/release-datatables/media/css/demo_table.css";
+		</style>
 <script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.js"></script>
     	<script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
