@@ -50,9 +50,13 @@ while ($i < $num)
         {
             //reset the vars
             $out = $out."<tr><td>$style</td>";
+            
             foreach($country as $item )
             {
+                $per = 0;
                 $out = $out."<td>".$item["count"]."</td>";
+                $out = $out."<td>".$per."</td>";
+                
                 $item["count"] = 0;   
             }
             $out = $out."</tr>";
