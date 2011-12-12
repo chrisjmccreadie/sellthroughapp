@@ -1,3 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+
+
+<script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.js"></script>
+    	<script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable();
+			} );
+		</script>
+</head>
+<body>
 <?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
@@ -13,11 +27,11 @@ $query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 
-$out =  "<table><tr>";
+$out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 
 $country = array();
 $i = 0;
-$out = $out."<th>Name</th>";
+$out = $out."<tr><th>Name</th>";
 while ($i < $num)
 {
   //  echo  mysql_result($result,$i,"country")."</br>";
@@ -28,6 +42,7 @@ while ($i < $num)
         $out = $out."<th>%</th>";
     $i++;   
 }
+$out = $out."</tr>";
 //echo "wah ";
 //print_r($country);
 
@@ -169,3 +184,5 @@ while ($i < $num)
 }
 echo "</table>".$out;
 ?>
+</body>
+</html>
