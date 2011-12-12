@@ -19,6 +19,7 @@ $country = array();
 $i = 0;
 while ($i < $num)
 {
+    echo  mysql_result($result,$i,"country")."</br>";
         $country[$i]["name"] = mysql_result($result,$i,"country");
         $country[$i]["count"] = 0;
 
