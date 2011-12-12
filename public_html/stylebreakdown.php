@@ -16,6 +16,7 @@ $num=mysql_numrows($result);
 $out =  "<table><tr>";
 
 $country = array();
+$i = 0;
 while ($i < $num)
 {
         $country[$i]["name"] = mysql_result($result,$i,"country");
