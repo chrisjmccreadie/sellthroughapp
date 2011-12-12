@@ -42,7 +42,7 @@ while ($i < $num)
     //loop till we find the country
     foreach($country as $item )
     {
-        echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
+       // echo "Style :".mysql_result($result,$i,"style")."Country :".$item["name"]." Count :".$item["count"]."</br>";
     }
     $i++;
 }
