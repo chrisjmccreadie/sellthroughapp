@@ -52,7 +52,7 @@ while ($i < $num)
             $out = $out."<tr><td>$style</td>";
             foreach($country as $item )
             {
-                $out = $out."<td>"$item["count"]."</td>";
+                $out = $out."<td>".$item["count"]."</td>";
                 $item["count"] = 0;   
             }
             $out = $out."</tr>";
