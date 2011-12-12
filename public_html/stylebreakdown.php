@@ -44,13 +44,13 @@ $i = 0;
 $style = "";
 while ($i < $num)
 {
-if ($style !=  mysql_result($result,$i,"style"))
+    if ($style !=  mysql_result($result,$i,"style"))
     {
         if ($style != "")
         {
             //reset the vars
             $out = $out."<tr><td>$style</td>";
-            foreach($array1 as $item )
+            foreach($country as $item )
             {
                 $out = $out."<td>"$item["count"]."</td>";
                 $item["count"] = 0;   
