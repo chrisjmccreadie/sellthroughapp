@@ -37,7 +37,6 @@ ORDER BY style,country
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
-$countrycount = count
 while ($i < $num)
 {
     //loop till we find the country
