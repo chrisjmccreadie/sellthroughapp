@@ -21,7 +21,7 @@ while ($i < $num) {
     $name = mysql_result($result,$i,"name");
      $query2 = "SELECT name,sum(quantity) as bought FROM `sellthrough2` WHERE name = '$name'";
     $result2=mysql_query($query2);
-    $bought = mysql_result($result,0,"bought");
+    $bought = mysql_result($result2,0,"bought");
     echo "<tr>";
     $email  = mysql_result($result,$i,"email");
     if (mysql_result($result,$i,"added") == 0)
