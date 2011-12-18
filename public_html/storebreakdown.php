@@ -32,11 +32,18 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
-$out = $out."<tr><th>Name</th></tr>";
+$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></tr>";
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
-     $out = $out."<tr class=\"odd gradeX\"><td>$name</td></tr>";
+      $query2 = "SELECT name,sum(quantity) as bought FROM `sellthrough2` WHERE name = '$name'";
+    $result2=mysql_query($query2);
+    $bought = mysql_result($result2,0,"bought");
+     
+     
+     $sold = 0;
+     $per = 0;
+     $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
            
     $i++;
 }
