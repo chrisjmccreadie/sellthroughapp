@@ -15,7 +15,8 @@ while ($i < $num) {
         $sellid = mysql_result($result,$i,"sellid");
         $sold = mysql_result($result,$i,"quantity");
        
-       $sold2 = 56;
+       $query2="SELECT * FROM `sellthrough2` where id = '$sellid' ";
+`      $sold2 = 2;
        echo "$sellid : $sold : $sold2</br>";
        
  
