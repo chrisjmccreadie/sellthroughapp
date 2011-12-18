@@ -44,7 +44,7 @@ while ($i < $num)
     $result2=mysql_query($query2);
     $sold= mysql_result($result2,0,"sold");
     
-     
+     echo "$per ff";
      $per = $bought / $sold;
      $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
            
