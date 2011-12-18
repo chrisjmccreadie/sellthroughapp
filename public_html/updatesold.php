@@ -7,7 +7,7 @@ $database="sellthroughapp";
 mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
-$query="SELECT * FROM `sale` order by sellid";
+$query="SELECT * FROM `sale` group by sellid order by sellid";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i=0;
