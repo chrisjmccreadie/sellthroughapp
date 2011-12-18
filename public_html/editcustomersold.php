@@ -1,6 +1,6 @@
 <html>
 <body>
-<form name="form1" id="form1" action="updatecustomer.php" method="POST">
+<form name="form1" id="form1" action="updatecustomersold.php" method="POST">
 <?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
