@@ -20,6 +20,10 @@ $i=0;
 echo "<table>";
 echo "<tr><td>Style</td><td>Colour</td><td>Size</td><td>Price</td><td>Number Bought</td></tr>";
 while ($i < $num) {
+    
+    
+   
+    //$num2=mysql_numrows($result2);
     if (mysql_result($result,$i,"quantity") != '0')
     {
         $id = mysql_result($result,$i,"id");
