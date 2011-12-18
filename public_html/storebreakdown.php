@@ -35,7 +35,7 @@ $i = 0;
 $out = $out."<tr><th>Name</th></tr>";
 while ($i < $num)
 {
-     $name mysql_result($result,$i,"name");
+     $name = mysql_result($result,$i,"name");
      $out = $out."<tr class=\"odd gradeX\"><td>$name</td></tr>";
            
     $i++;
