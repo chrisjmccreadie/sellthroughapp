@@ -12,8 +12,8 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i=0;
 while ($i < $num) {
-        $sellid = mysql_result($result2,$i,"sellid");
-        $sold = mysql_result($result2,$i,"quantity");
+        $sellid = mysql_result($result,$i,"sellid");
+        $sold = mysql_result($result,$i,"quantity");
         echo "$sellid : $sold</br>";
  $i++;   
 }
