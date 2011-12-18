@@ -41,13 +41,16 @@ while ($i < $num)
     $bought = mysql_result($result2,0,"bought");
   
      $sold = mysql_result($result2,0,"sold");
-  if ($sold == 0)
+    
+    /*
+    if ($sold == 0)
     {
  
         $query2 = "SELECT name,sum(sold) as sold FROM `sellthrough2` WHERE name = '$name'";
         $result2=mysql_query($query2);
         $sold= mysql_result($result2,0,"sold");
     }
+    */
      //echo "$per ff";
      $per = $sold / $bought * 100;
      $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
