@@ -12,14 +12,16 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i=0;
 while ($i < $num) {
-        $sellid = mysql_result($result,$i,"sellid");
-        $sold = mysql_result($result,$i,"quantity");
+       // $sellid = mysql_result($result,$i,"sellid");
+        //$sold = mysql_result($result,$i,"quantity");
        
-     //   $query2="SELECT * FROM `sellthrough2` where id = '$sellid' ";
+     //  git  $query2="SELECT * FROM `sellthrough2` where id = '$sellid' ";
       // $result2=mysql_query($query2);
      //  $sold2 = mysql_result($result2,0,"quantity");
      
-`      $sold2 = 2;
+`      
+
+$sold2 = 2;
        echo "$sellid : $sold : $sold2</br>";
        
  
