@@ -67,8 +67,10 @@ while ($i < $num)
            
     $i++;
 }
-echo "Stores Added $pertotal</br>";
-echo "Store Not Added $perzero</br>";
+$pert = $pertotal / $i * 100;
+$perz = $perzero / $i * 100;
+echo "Stores Added $pertotal ($pert)</br>";
+echo "Store Not Added $perzero ($perz)</br>";
 echo $out."</tbody></table>";
 ?>
 
