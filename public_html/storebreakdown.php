@@ -32,7 +32,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
-$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></tr>";
+$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></tr></thead>";
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
