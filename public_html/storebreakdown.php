@@ -40,8 +40,8 @@ while ($i < $num)
     $result2=mysql_query($query2);
     $bought = mysql_result($result2,0,"bought");
   
-     $sold = mysql_result($result,0,"sold");
-    $rsold = mysql_result($result,0,"rsold");
+     $sold = mysql_result($result2,0,"sold");
+    $rsold = mysql_result($result2,0,"rsold");
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
