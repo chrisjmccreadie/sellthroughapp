@@ -36,12 +36,12 @@ $out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></t
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
-      $query2 = "SELECT name,sum(quantity) as bought FROM `sellthrough2` WHERE name = '$name'";
+      $query2 = "SELECT name,sum(quantity) as bought sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE name = '$name'";
     $result2=mysql_query($query2);
     $bought = mysql_result($result2,0,"bought");
   
-     $sold = mysql_result($result,$i,"sold");
-    $rsold = mysql_result($result,$i,"rsold");
+     $sold = mysql_result($result,0,"sold");
+    $rsold = mysql_result($result,0,"rsold");
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
