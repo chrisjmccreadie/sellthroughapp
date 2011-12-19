@@ -27,7 +27,7 @@ while ($i < $num)
        //$sold2 = 2;
       // echo "$sellid : $sold : $sold2</br>";
       $sold2 = $sold+$sold2;
-      $query3 ="UPDATE  `sellthroughapp`.`sellthrough2` SET  `rsold` =  '$sold2' where id = '$sellid'"
+      $query3 ="UPDATE  `sellthroughapp`.`sellthrough2` SET  `rsold` =  '$sold2' where id = '$sellid'";
 $result3=mysql_query($query3);
 
       $i++;   
