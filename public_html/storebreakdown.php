@@ -42,7 +42,7 @@ while ($i < $num)
   
      $sold = mysql_result($result,$i,"sold");
     $rsold = mysql_result($result,$i,"rsold");
- echo $rsold;
+ //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
     /*
@@ -56,7 +56,8 @@ while ($i < $num)
     */
      //echo "$per ff";
      $per = $sold / $bought * 100;
-     $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
+   $per number_format($per,0);
+   $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
            
     $i++;
 }
