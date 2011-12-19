@@ -33,6 +33,8 @@ $num=mysql_numrows($result);
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
 $out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></tr></thead>";
+$pertotal = 0;
+$perzeo = 0;
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
@@ -57,10 +59,16 @@ while ($i < $num)
      //echo "$per ff";
      $per = $sold / $bought * 100;
    $per = number_format($per,0);
+   if ($per == 0)
+       $perzero = $perzero +1;
+   else
+      $pertotal = $pertotal +1;
    $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
            
     $i++;
 }
+echo "Stores Added $pertotal</br>";
+echo "Store Not Added $perzero</br>";
 echo $out."</tbody></table>";
 ?>
 
