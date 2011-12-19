@@ -21,8 +21,8 @@ while ($i < $num) {
      
 `      
 
-$sold2 = 2;
-       echo "$sellid : $sold : $sold2</br>";
+//$sold2 = 2;
+  //     echo "$sellid : $sold : $sold2</br>";
        
  
  $i++;   
