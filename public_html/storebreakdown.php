@@ -56,7 +56,7 @@ while ($i < $num)
     */
      //echo "$per ff";
      $per = $sold / $bought * 100;
-   $per number_format($per,0);
+   $per = number_format($per,0);
    $out = $out."<tr class=\"odd gradeX\"><td>$name</td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
            
     $i++;
