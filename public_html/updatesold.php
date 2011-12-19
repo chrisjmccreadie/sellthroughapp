@@ -10,7 +10,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 
 
 //clear the rsold
-$query ="UPDATE  `sellthroughapp`.`sellthrough2` SET  `rsold` =  '0'"
+$query ="UPDATE  `sellthroughapp`.`sellthrough2` SET  `rsold` =  '0'";
 $result=mysql_query($query);
 
 $query="SELECT * FROM `sale`  order by sellid";
