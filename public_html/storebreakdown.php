@@ -73,9 +73,9 @@ $storet = $i /100 * 60;
 $pert = number_format($pert,0);
 $perz = number_format($perz,0);
 $storet = number_format($storet,0);
-echo "Stores Added $pertotal ($pert) 60%</br>";
+echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
-echo "Stores to hit target $storet</br>";
+echo "Stores to hit target $storet 60%</br>";
 echo $out."</tbody></table>";
 ?>
 
