@@ -70,6 +70,9 @@ while ($i < $num)
 $pert = $pertotal / $i * 100;
 $perz = $perzero / $i * 100;
 $storet = $i /100 * 60;
+$pert = number_format($pert,0);
+$perz = number_format($perz,0);
+$storet = number_format($storet,0);
 echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet</br>";
