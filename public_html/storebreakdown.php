@@ -41,7 +41,10 @@ while ($i < $num)
     $bought = mysql_result($result2,0,"bought");
   
      $sold = mysql_result($result2,0,"sold");
-    
+    $rsold = mysql_result($result2,0,"rsold");
+ echo $rsold;
+ if ($sold == 0)
+        $sold = $rsold;
     /*
     if ($sold == 0)
     {
