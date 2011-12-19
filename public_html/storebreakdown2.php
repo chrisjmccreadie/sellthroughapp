@@ -25,7 +25,7 @@ while ($i < $num) {
         $sold = mysql_result($result,$i,"sold");
         $rsold = mysql_result($result,$i,"rsold");
         if ($sold == 0)
-            $sold = $sold;
+            $sold = $rsold;
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
         echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"size")."</td><td>".mysql_result($result,$i,"price")."</td><td>$sold</td><td>".mysql_result($result,$i,"quantity")."</td>";
