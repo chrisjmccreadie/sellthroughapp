@@ -12,11 +12,11 @@ foreach ($_POST as $k => $v) {
     echo "$k : $v";
  
     //check if it exists
-    $query0 = "select * from `sellthroughapp`.postsale where id = '$k'";
+    $query0 = "select * from `sellthroughapp`.postsale where sellthroughid = '$k'";
     $result0 = mysql_query($query0);
     $num=mysql_numrows($result0);
     if ($num > 0)
-      $query="update `sellthroughapp`.`postsale` set `per` ='$v' where id = '$k'";
+      $query="update `sellthroughapp`.`postsale` set `per` ='$v' where sellthroughid = '$k'";
     else
     //     $query="INSERT INTO  `sellthroughapp`.`postsale` (`sellthroughid` ,`per`)VALUES ( '',  '')";
     $result=mysql_query($query);
