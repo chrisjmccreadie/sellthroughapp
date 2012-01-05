@@ -21,6 +21,13 @@ echo "<tr><td>Style</td><td>Colour</td><td>Size</td><td>Price</td><td>Number Sol
 while ($i < $num) {
     if (mysql_result($result,$i,"quantity") != '0')
     {
+        
+             $sold = mysql_result($result2,0,"sold");
+    $rsold = mysql_result($result2,0,"rsold");
+ //echo $rsold;
+ if ($sold == 0)
+        $sold = $rsold;
+    }
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
         echo "<td>"
@@ -31,8 +38,7 @@ while ($i < $num) {
         .mysql_result($result,$i,"size").
         "</td><td>"
         .mysql_result($result,$i,"price").
-        "</td><td>"
-        .mysql_result($result,$i,"sold")."</td>";
+        "</td><td >$sold</td>";
          "</td><td>"
         .mysql_result($result,$i,"quantity")."</td>";
         echo "</tr>";
