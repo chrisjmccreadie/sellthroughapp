@@ -68,9 +68,12 @@ $averageb = $averageb+$bought;
      $per = $sold / $bought * 100;
    $per = number_format($per,0);
    if ($per == 0)
+   {
+    
        $perzero = $perzero +1;
-   else
-      $pertotal = $pertotal +1;
+   }
+    else
+       $pertotal = $pertotal +1;
    $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$presale</td><td>$postsale</td><td>$per %</td></tr>";
            
     $i++;
@@ -82,8 +85,8 @@ $pert = number_format($pert,0);
 $perz = number_format($perz,0);
 $storet = number_format($storet,0);
 $averagep = $averages / $averageb *100;
-$averageb = $averageb / $i;
-$averages = $averages / $i;
+//$averageb = $averageb / $i;
+//$averages = $averages / $i;
 $averages = number_format($averages,0);
 $averagep = number_format($averagep,0);
 $averageb = number_format($averageb,0);
