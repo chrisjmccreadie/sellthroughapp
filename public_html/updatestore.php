@@ -9,7 +9,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 print_r($_POST);
 foreach ($_POST as $k => $v) {
-    echo "$k : $v";
+  //  echo "$k : $v";
  
     //check if it exists
     $query0 = "select * from `sellthroughapp`.postsale where sellthroughid = '$k'";
@@ -18,7 +18,7 @@ foreach ($_POST as $k => $v) {
     if ($num > 0)
       $query="update `sellthroughapp`.`postsale` set `per` ='$v' where sellthroughid = '$k'";
     else
-    //     $query="INSERT INTO  `sellthroughapp`.`postsale` (`sellthroughid` ,`per`)VALUES ( '',  '')";
+         $query="INSERT INTO  `sellthroughapp`.`postsale` (`sellthroughid` ,`per`)VALUES ( '$k',  '$v')";
     $result=mysql_query($query);
     echo mysql_error();
 
