@@ -15,8 +15,6 @@ $customer = $_GET["name"];
 $query="SELECT * FROM `sellthrough2` where name = '$customer'  order by style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
-echo mysql_error();
-exit;
 $i=0;
 
 echo '<input type="submit" value="Submit"/>';
