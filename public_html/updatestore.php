@@ -24,7 +24,7 @@ foreach ($_POST as $k => $v) {
 
     //update they have been added
 }
-    header('Location: index.php');
+    header('Location: storebreakdown.php');
 
 echo "Thank you";
 
