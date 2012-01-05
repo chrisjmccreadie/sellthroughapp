@@ -22,8 +22,8 @@ while ($i < $num) {
     if (mysql_result($result,$i,"quantity") != '0')
     {
         
-             $sold = mysql_result($result2,0,"sold");
-    $rsold = mysql_result($result2,0,"rsold");
+             $sold = mysql_result($result,$i,"sold");
+    $rsold = mysql_result($result,$i,"rsold");
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
