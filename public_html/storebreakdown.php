@@ -112,7 +112,7 @@ echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
 
-echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
+echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep %</td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
 ?>
 </form>
 </body>
