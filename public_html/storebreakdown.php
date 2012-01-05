@@ -87,8 +87,8 @@ $averages = $averages / $i;
 echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
-$out = $out."<tr>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td></tr>";
-echo $out."</tbody></table>";
+
+echo $out."<tr>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td></tr></tbody></table>";
 ?>
 
 </body>
