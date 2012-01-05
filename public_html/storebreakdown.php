@@ -65,10 +65,13 @@ while ($i < $num)
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
-        
-$averages = $averages+$sold;
-$averageb = $averageb+$bought;
-
+   
+   
+   if ($sold > 0)
+   {
+        $averages = $averages+$sold;
+        $averageb = $averageb+$bought;
+   }
     /*
     if ($sold == 0)
     {
