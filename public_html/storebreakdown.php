@@ -49,8 +49,8 @@ while ($i < $num)
    $query3 = "select per from postsale where sellthroughid = '$id'";
        $result3=mysql_query($query3);
        $num3=mysql_numrows($result3);
-       echo mysql_error();
-       echo "num".$num3;
+       //echo mysql_error();
+     //  echo "num".$num3;
        if ($num3 >0)
           $postsaleper = mysql_result($result3,0,"per");
        else
