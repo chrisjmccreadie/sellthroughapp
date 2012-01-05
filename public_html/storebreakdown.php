@@ -88,7 +88,7 @@ echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
 
-echo $out."<tr>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td></tr></tbody></table>";
+echo $out."<tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td></tr></tbody></table>";
 ?>
 
 </body>
