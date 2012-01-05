@@ -35,6 +35,9 @@ $i = 0;
 $out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th></tr></thead>";
 $pertotal = 0;
 $perzeo = 0;
+$averageb = 0;
+$averages = 0;
+$averagep = 0;
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
@@ -47,6 +50,10 @@ while ($i < $num)
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
+        
+$averages = $averages+$sold;
+$averageb = $averageb+$bought;
+
     /*
     if ($sold == 0)
     {
@@ -73,9 +80,14 @@ $storet = $i /100 * 60;
 $pert = number_format($pert,0);
 $perz = number_format($perz,0);
 $storet = number_format($storet,0);
+$averagep = $averages / $averageb *100;
+$averageb = $averageb / $i;
+$averages = $averages / $i;
+
 echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
+$out = $out."<tr>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td>";
 echo $out."</tbody></table>";
 ?>
 
