@@ -33,7 +33,7 @@ $num=mysql_numrows($result);
 
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
-$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th><th>Post Sale</th><th>Post Sale Per</th></tr></thead>";
+$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th><th>Post Sale Per</th></tr></thead>";
 $pertotal = 0;
 $perzeo = 0;
 $averageb = 0;
@@ -87,7 +87,7 @@ $averageb = $averageb+$bought;
    }
     else
        $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td><td>$postsale<td>
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td>
    
    
     <input type='text' name='$id' id='$id' value='$postsaleper' class='txt' /> %</td></tr>";
@@ -110,7 +110,7 @@ echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
 
-echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td><td></td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
+echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
 ?>
 </form>
 </body>
