@@ -38,7 +38,7 @@ while ($i < $num) {
         .mysql_result($result,$i,"size").
         "</td><td>"
         .mysql_result($result,$i,"price").
-        "</td><td >$sold</td>";
+        "</td><td >$sold</td>".
          "</td><td>"
         .mysql_result($result,$i,"quantity")."</td>";
         echo "</tr>";
