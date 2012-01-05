@@ -39,6 +39,7 @@ $perzeo = 0;
 $averageb = 0;
 $averages = 0;
 $averagep = 0;
+$f = 0;
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
