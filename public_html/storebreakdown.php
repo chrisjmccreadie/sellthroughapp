@@ -15,7 +15,7 @@
 		</script>
 </head>
 <body>
-
+<form name="form1" id="form1" action="updatestore.php" method="POST">
 <?php
 //do it
 //fecth a list of urls mysql_connect(localhost,$username,$password);
@@ -30,7 +30,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 $query = "select name,sold,rsold from sellthrough2 group by name";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
-<form name="form1" id="form1" action="updatestore.php" method="POST">
+
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
 $out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th><th>Post Sale</th><th>Post Sale Per</th></tr></thead>";
