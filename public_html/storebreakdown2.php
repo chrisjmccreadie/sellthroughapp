@@ -33,6 +33,8 @@ while ($i < $num) {
         .mysql_result($result,$i,"price").
         "</td><td>"
         .mysql_result($result,$i,"sold")."</td>";
+         "</td><td>"
+        .mysql_result($result,$i,"quantity")."</td>";
         echo "</tr>";
     }
     $i++;
