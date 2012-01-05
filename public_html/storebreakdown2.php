@@ -18,19 +18,7 @@ $num=mysql_numrows($result);
 echo mysql_error();
 exit;
 $i=0;
-echo "<table>";
-echo "<tr><td>Style</td><td>Colour</td><td>Size</td><td>Price</td><td>Number Sold</td><td>Number Bought</td></tr>";
-while ($i < $num) {
-    if (mysql_result($result,$i,"quantity") != '0')
-    {
-        $id = mysql_result($result,$i,"id");
-        echo "<tr>";
-        echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"size")."</td><td>".mysql_result($result,$i,"price")."</td><td>".mysql_result($result,$i,"sold")".</td>";
-        echo "</tr>";
-    }
-    $i++;
-}
-echo "</table>";
+
 echo '<input type="submit" value="Submit"/>';
 mysql_close();
 ?>
