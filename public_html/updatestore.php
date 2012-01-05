@@ -18,7 +18,7 @@ foreach ($_POST as $k => $v) {
     if ($num > 0)
       $query="update `sellthroughapp`.`postsale` set `per` ='$v' where id = '$k'";
     else
-         $query="INSERT INTO  `sellthroughapp`.`postsale` (`sellthroughid` ,`per`)VALUES (NULL ,  '',  '')";
+    //     $query="INSERT INTO  `sellthroughapp`.`postsale` (`sellthroughid` ,`per`)VALUES ( '',  '')";
     $result=mysql_query($query);
     echo mysql_error();
 
