@@ -88,10 +88,8 @@ $averageb = $averageb+$bought;
    }
     else
        $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td>
-   
-   
-    <input type='text' name='$id' id='$id' value='$postsaleper' class='txt' /> %</td></tr>";
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td> 
+   <td><input type='text' name='$id' id='$id' value='$postsaleper' class='txt' /> %</td></tr>";
            
     $i++;
 }
