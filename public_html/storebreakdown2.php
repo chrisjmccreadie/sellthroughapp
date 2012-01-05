@@ -27,7 +27,7 @@ while ($i < $num) {
  //echo $rsold;
  if ($sold == 0)
         $sold = $rsold;
-    }
+
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
         echo "<td>"
