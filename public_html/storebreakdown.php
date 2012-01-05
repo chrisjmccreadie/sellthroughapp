@@ -41,10 +41,11 @@ $averagep = 0;
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
-      $query2 = "SELECT name,sum(quantity) as bought, sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE name = '$name'";
+      $query2 = "SELECT sum(presale) as presale,sum(postsale) as postsale,name,sum(quantity) as bought, sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE name = '$name'";
     $result2=mysql_query($query2);
     $bought = mysql_result($result2,0,"bought");
-  
+    $presale = mysql_result($result2,0,"presale");
+      $postsale = mysql_result($result2,0,"postsale");
      $sold = mysql_result($result2,0,"sold");
     $rsold = mysql_result($result2,0,"rsold");
  //echo $rsold;
@@ -70,7 +71,7 @@ $averageb = $averageb+$bought;
        $perzero = $perzero +1;
    else
       $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td></tr>";
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$presale</td><td>$postsale</td><td>$per %</td></tr>";
            
     $i++;
 }
@@ -88,7 +89,7 @@ echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
 
-echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td></tr></tfoot></table>";
+echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td></td><td></td><td>$averagep</td></tr></tfoot></table>";
 ?>
 
 </body>
