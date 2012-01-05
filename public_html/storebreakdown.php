@@ -51,7 +51,7 @@ while ($i < $num)
        $num3=mysql_numrows($result3);
        echo "num".$num3;
        if ($num3 >0)
-          $postsaleper = mysql_result($result3,0,"postsaleper");
+          $postsaleper = mysql_result($result3,0,"per");
        else
           $postsaleper = 0;
    $bought = mysql_result($result2,0,"bought");
