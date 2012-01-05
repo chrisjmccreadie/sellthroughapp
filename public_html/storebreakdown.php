@@ -41,9 +41,19 @@ $averagep = 0;
 while ($i < $num)
 {
      $name = mysql_result($result,$i,"name");
-      $query2 = "SELECT sum(presale) as presale,sum(postsale) as postsale,name,sum(quantity) as bought, sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE name = '$name'";
+      $query2 = "SELECT id,sum(presale) as presale,sum(postsale) as postsale,name,sum(quantity) as bought, sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE name = '$name'";
     $result2=mysql_query($query2);
-    $bought = mysql_result($result2,0,"bought");
+   
+   $id = mysql_result($result2,0,"id");
+   
+   $query3 = "select per from postsale where sellthroughid = '$id'";
+       $result3=mysql_query($query3);
+       $num3=mysql_numrows($result3);
+       if ($num3 >0)
+          $postsaleper = mysql_result($result3,0,"postsaleper");
+       else
+          $postsaleper = 0;
+   $bought = mysql_result($result2,0,"bought");
     $presale = mysql_result($result2,0,"presale");
       $postsale = mysql_result($result2,0,"postsale");
      $sold = mysql_result($result2,0,"sold");
@@ -74,7 +84,7 @@ $averageb = $averageb+$bought;
    }
     else
        $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td><td>$postsale<td>$postsale</td></tr>";
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td><td>$postsale<td>$postsaleper</td></tr>";
            
     $i++;
 }
