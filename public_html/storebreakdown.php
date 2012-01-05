@@ -32,7 +32,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
-$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Pre Sale</th><th>Post Sale</th><th>Percentage</th></tr></thead>";
+$out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th><th>Post Sale</th><th>Post Sale Per</th></tr></thead>";
 $pertotal = 0;
 $perzeo = 0;
 $averageb = 0;
@@ -74,7 +74,7 @@ $averageb = $averageb+$bought;
    }
     else
        $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$presale</td><td>$postsale</td><td>$per %</td></tr>";
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"storebreakdown2.php?name=$name\">$name</a></td><td>$bought</td><td>$sold</td><td>$per %</td><td>$postsale<td>$postsale</td></tr>";
            
     $i++;
 }
