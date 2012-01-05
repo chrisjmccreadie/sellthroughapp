@@ -17,7 +17,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i=0;
 echo "<table>";
-echo "<tr><td>Style</td><td>Colour</td><td>Size</td><td>Price</td><td>Number Sold</td><td>Number Bought</td></tr>";
+echo "<tr><td>Style</td><td>Colour</td><td>Size</td><td>Price</td><td>Number Sold</td><td>Number Boughts</td></tr>";
 while ($i < $num) {
     if (mysql_result($result,$i,"quantity") != '0')
     {
