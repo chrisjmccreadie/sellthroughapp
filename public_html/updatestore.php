@@ -10,7 +10,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //print_r($_POST);
 foreach ($_POST as $k => $v) {
     echo "$k : $v";
-   exit; 
+ 
     //check if it exists
     $query0 = "select * from `sellthroughapp`.postsale where id = '$k'";
     $result0 = mysql_query($query0);
@@ -24,7 +24,7 @@ foreach ($_POST as $k => $v) {
 
     //update they have been added
 }
-    header('Location: storebreakdown.php');
+  //  header('Location: storebreakdown.php');
 
 echo "Thank you";
 
