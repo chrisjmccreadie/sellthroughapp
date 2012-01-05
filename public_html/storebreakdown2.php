@@ -23,7 +23,16 @@ while ($i < $num) {
     {
         $id = mysql_result($result,$i,"id");
         echo "<tr>";
-       // echo "<td>".mysql_result($result,$i,"style")."</td><td>".mysql_result($result,$i,"colour")."</td><td>".mysql_result($result,$i,"size")."</td><td>".mysql_result($result,$i,"price")."</td><td>".mysql_result($result,$i,"sold")".</td>";
+        echo "<td>"
+        .mysql_result($result,$i,"style").
+        "</td><td>"
+        .mysql_result($result,$i,"colour").
+        "</td><td>"
+        .mysql_result($result,$i,"size").
+        "</td><td>"
+        .mysql_result($result,$i,"price").
+        "</td><td>"
+        .mysql_result($result,$i,"sold")."</td>";
         echo "</tr>";
     }
     $i++;
