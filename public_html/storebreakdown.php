@@ -30,6 +30,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 $query = "select name,sold,rsold from sellthrough2 group by name";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
+<form name="form1" id="form1" action="updatestore.php" method="POST">
 $out =  '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"><thead>';
 $i = 0;
 $out = $out."<tr><th>Name</th><th>Bought</th><th>Sold</th><th>Percentage</th><th>Post Sale</th><th>Post Sale Per</th></tr></thead>";
@@ -109,8 +110,8 @@ echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
 
-echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td></td><td></td><td>$averagep</td></tr></tfoot></table>";
+echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep</td><td></td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
 ?>
-
+</form>
 </body>
 </html>
