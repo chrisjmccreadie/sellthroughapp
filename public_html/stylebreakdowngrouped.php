@@ -206,12 +206,12 @@ switch ($country)
     }
     
     
-       $out = $out."<tr><td>$name</td><td>$aus</td><td>$aust</td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       $out = $out."<tr><td>$name</td><td>$aus</td><td>$aust</td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
     
     $i ++;
