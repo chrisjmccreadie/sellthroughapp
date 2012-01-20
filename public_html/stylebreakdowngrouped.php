@@ -187,7 +187,7 @@ while ($i < $num)
             break;
     }
         //copy the style 
-        $style = mysql_result($result,$i,"style")   ;         
+        $style = mysql_result($result,$i,"name")   ;         
     }
     $i++;
 }
