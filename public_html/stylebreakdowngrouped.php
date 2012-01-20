@@ -57,7 +57,7 @@ $i = 0;
 while ($i <= $num)
 {
     $name=  mysql_result($result,$i,"name");
-    $styleid=  mysql_result($result,$i,"styleid");
+    $styleid=  mysql_result($result,$i,"id");
    
     //get the countries
     $query2="SELECT style, country from sellthrough2 where styleid='$styleid'";
@@ -71,7 +71,7 @@ while ($i <= $num)
     }
     $i ++;
 }
-exit;
+echo $out."</tbody></table>";
 
 ?>
 </body>
