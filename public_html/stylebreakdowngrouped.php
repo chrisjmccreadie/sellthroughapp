@@ -62,6 +62,8 @@ while ($i <= $num)
     $query2="SELECT style, country from sellthrough2 where styleid='$styleid'";
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
+    
+    /*
     $i2 = 0;
     $aus = 0;
     $aust = 0;
@@ -96,6 +98,7 @@ while ($i <= $num)
     $us = 0;
     $uk = 0;
     $us = 0;
+    */
     while ($i2 <= $num2)
     {
         $country = mysql_result($result2,$i2,"country");
