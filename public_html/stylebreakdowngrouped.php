@@ -52,6 +52,7 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 $query="SELECT * from style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
+    echo mysql_error();
 $i = 0;
 while ($i <= $num)
 {
@@ -62,7 +63,7 @@ while ($i <= $num)
     $query2="SELECT style, country from sellthrough2 where styleid='$styleid'";
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
-    
+    echo mysql_error();
     /*
     $i2 = 0;
     $aus = 0;
