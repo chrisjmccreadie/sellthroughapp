@@ -60,7 +60,13 @@ while ($i < $num)
     $num2=mysql_numrows($result2);
     echo mysql_error();
     $i2 = 0;
-    
+    while ($i2 < $num2)
+    {
+        $country = mysql_result($result2,$i2,"country");
+         $ccount = mysql_result($result2,$i2,"cccount");
+         echo "$name : $country : $ccount";
+          $i2 =  $i2+1;
+    }
     
     $i = $i+1;
 }
