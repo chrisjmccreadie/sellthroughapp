@@ -198,7 +198,6 @@ while ($i < $num)
 }
 
 echo $out."</tbody></table>";
-
 ?>
 </body>
 </html>
