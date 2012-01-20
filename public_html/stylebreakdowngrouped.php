@@ -50,7 +50,7 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 //print_r($country);
 
 
-$query="SELECT sellthrough2.style, sellthrough2.country, COUNT( sellthrough2.country ) AS ccount, style.name
+$query="SELECT sellthrough2.style, sellthrough2.country, COUNT( sellthrough2.country ) AS ccount
 FROM  `sellthrough2` 
 
 GROUP BY sellthrough2.styleid,sellthrough2.country, sellthrough2.style,
