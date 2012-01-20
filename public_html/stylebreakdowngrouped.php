@@ -56,6 +56,8 @@ while ($i <= $num)
 {
     $name=  mysql_result($result,$i,"name");
     $styleid=  mysql_result($result,$i,"id");
+   echo  $styleid;
+    
     $i++;
 }
 echo $out."</tbody></table>";
