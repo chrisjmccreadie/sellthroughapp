@@ -62,7 +62,7 @@ $num=mysql_numrows($result);
 //echo "$num";
 $i = 0;
 $style = "";
-while ($i < $num)
+while ($i <= $num)
 {
     if ($style !=  mysql_result($result,$i,"name"))
     {
