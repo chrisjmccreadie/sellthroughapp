@@ -51,20 +51,7 @@ while ($i < $num)
 {
     $name=  mysql_result($result,$i,"name");
     $styleid=  mysql_result($result,$i,"id");
-    
-    //get the countries
-    $query2="SELECT style, country, count(country) as ccount from sellthrough2 where styleid='$styleid' group by country";
-    $result2=mysql_query($query2);
-    $num2=mysql_numrows($result2);
-    echo mysql_error();
-    $i2 = 0;
-    while ($i2 < $num2)
-    {
-        $country = mysql_result($result2,$i2,"country");
-         $ccount = mysql_result($result2,$i2,"cccount");
-         echo "$name : $country : $ccount";
-         $i2 = $i2+1;
-    }
+    echo "$name : $styleid";
     $i = $i+1;
 }
 
