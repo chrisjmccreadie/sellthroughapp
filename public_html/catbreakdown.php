@@ -44,7 +44,7 @@ while ($i < $num)
 {
      $styleid = mysql_result($result,$i,"styleid");
      
-     $query3  = "select name from style where id = '$styleid'"
+     $query3  = "select name from style where id = '$styleid'";
       $result3=mysql_query($query3);
         $stylename = mysql_result($result3,0,"name");
      
