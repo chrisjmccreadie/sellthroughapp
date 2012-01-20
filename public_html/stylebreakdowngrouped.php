@@ -50,6 +50,17 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 //print_r($country);
 
 
+$query="SELECT * from style"
+$result=mysql_query($query);
+$num=mysql_numrows($result);
+$i = 0;
+while ($i <= $num)
+{
+    echo  mysql_result($result,$i,"name");
+    $i ++;
+}
+exit;
+
 $query="SELECT sellthrough2.style, sellthrough2.country,sellthrough2.styleid, COUNT( sellthrough2.country ) AS ccount,style.name as stylename
 FROM  `sellthrough2` 
 LEFT JOIN style ON sellthrough2.styleid = style.id
