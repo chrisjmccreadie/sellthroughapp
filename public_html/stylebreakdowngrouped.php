@@ -52,7 +52,7 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 
 $query="SELECT style, country, COUNT( country) AS ccount
 FROM  `sellthrough2` 
-GROUP BY country,styleid
+GROUP BY country,style,styleid
 ORDER BY style,country
 ";
 
