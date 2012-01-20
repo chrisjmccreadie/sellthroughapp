@@ -49,7 +49,7 @@ while ($i < $num)
       $result3=mysql_query($query3);
         $stylename = mysql_result($result3,0,"name");
         if ($styleid == 0)
-            $stylename "Unknown";
+            $stylename = "Unknown";
      
       $query2 = "SELECT id,sum(presale) as presale,sum(postsale) as postsale,name,sum(quantity) as bought, sum(sold) as sold, sum(rsold) as rsold FROM `sellthrough2` WHERE styleid = '$styleid'";
     $result2=mysql_query($query2);
