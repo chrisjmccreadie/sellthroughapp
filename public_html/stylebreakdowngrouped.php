@@ -50,10 +50,11 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 //print_r($country);
 
 
-$query="SELECT style, country, COUNT( country) AS ccount
+$query="SELECT sellthrough2.style, sellthrough2.country, COUNT( sellthrough2.country ) AS ccount, style.name
 FROM  `sellthrough2` 
-GROUP BY styleid
-ORDER BY style,country
+LEFT JOIN style ON sellthrough2.styleid = style.id
+GROUP BY sellthrough2.styleid
+ORDER BY sellthrough2.style, sellthrough2.country
 ";
 
 $result=mysql_query($query);
