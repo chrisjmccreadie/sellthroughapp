@@ -66,8 +66,8 @@ while ($i <= $num)
     $i2 = 0;
     while ($i2 <= $num2)
     {
-        echo =  mysql_result($result2,$i2,"country");
-        $i2+;
+        echo mysql_result($result2,$i2,"country");
+        $i2++;
     }
     $i ++;
 }
