@@ -56,7 +56,19 @@ $num=mysql_numrows($result);
 $i = 0;
 while ($i <= $num)
 {
-    echo  mysql_result($result,$i,"name");
+    $name=  mysql_result($result,$i,"name");
+    $styleid=  mysql_result($result,$i,"styleid");
+   
+    //get the countries
+    $query2="SELECT style, country from sellthrough2 where styleid='$styleid'";
+    $result2=mysql_query($query2);
+    $num2=mysql_numrows($result2);
+    $i2 = 0;
+    while ($i2 <= $num2)
+    {
+        echo =  mysql_result($result,$i,"country");
+        $i2+;
+    }
     $i ++;
 }
 exit;
