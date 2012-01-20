@@ -55,15 +55,17 @@ while ($i < $num)
     //echo "$name : $styleid";
       
     //get the countries
-    $query2="SELECT style, country, count(country) as ccount,sum(sold) as sold,sum(rsold) as rsold from sellthrough2 where styleid='$styleid' group by country";
-    //echo $query2;
+//    $query2="SELECT style, country, count(country) as ccount,sum(sold) as sold,sum(rsold) as rsold from sellthrough2 where styleid='$styleid' group by country";
+$query2 = " SELECT style, country, sum(sold) as sold,sum(rsold) as rsold from sellthrough2 where styleid='$styleid'  group by style";
+ 
+ //echo $query2;
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
     echo mysql_error();
     $i2 = 0;
     while ($i2 < $num2)
     {
-         $ccount=  mysql_result($result2,$i2,"ccount");
+       //  $ccount=  mysql_result($result2,$i2,"ccount");
           $countryo=  mysql_result($result2,$i2,"country");
           //switch
           $ccount = mysql_result($result2,$i2,"sold"); 
