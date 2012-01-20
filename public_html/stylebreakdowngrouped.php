@@ -50,7 +50,7 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 //print_r($country);
 
 
-$query="SELECT * from style"
+$query="SELECT * from style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 $i = 0;
