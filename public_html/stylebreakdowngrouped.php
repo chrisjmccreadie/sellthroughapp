@@ -48,7 +48,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 echo mysql_error();
 $i = 0;
-print_r($country);
+//print_r($country);
 while ($i < $num)
 {
     $name=  mysql_result($result,$i,"name");
