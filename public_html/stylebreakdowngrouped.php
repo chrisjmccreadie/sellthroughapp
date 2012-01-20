@@ -69,6 +69,18 @@ while ($i < $num)
          //echo "$name : $country : $ccount<br/>";
          
          
+             //
+            switch ($country) 
+            {
+                case "AUSTRALIA":
+                $country[0]["count"] = mysql_result($result2,$i2,"ccount");
+                break;
+       
+            }
+         
+         
+         //
+         
      
 
          
