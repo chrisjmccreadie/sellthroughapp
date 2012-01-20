@@ -177,7 +177,7 @@ while ($i < $num)
     }
      echo "$name : ";
      $counto = 0
-     while ($counto <= count($country)
+     while ($counto <= count($country))
      {
           echo $country[$counto]["name"];
         echo $country[$counto]["count"];
