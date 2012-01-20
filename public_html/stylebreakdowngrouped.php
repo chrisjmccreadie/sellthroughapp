@@ -25,7 +25,6 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 @mysql_select_db($database) or die( "Unable to select database");
 //close the database 
 $country = array();
-
 $query = "select country from sellthrough2 group by country";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
