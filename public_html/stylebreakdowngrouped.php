@@ -102,7 +102,7 @@ while ($i <= $num)
         $country = mysql_result($result2,$i2,"country");
         $i2++;
         
-switch (mysql_result($result,$i,"country")) 
+switch ($country) 
     {
         case "AUSTRALIA":
             $aus++;
