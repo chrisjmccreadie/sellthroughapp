@@ -31,7 +31,6 @@ while ($i < $num) {
         $id = mysql_result($result,$i,"id");
         
         echo "<tr>";
-        echo "<td>"
          echo "<td>"
         .mysql_result($result,$i,"name").
         "</td><td>"
