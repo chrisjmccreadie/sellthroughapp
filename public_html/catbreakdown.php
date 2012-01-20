@@ -99,7 +99,7 @@ while ($i < $num)
    }
     else
        $pertotal = $pertotal +1;
-   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"catbreakdown2.php?name=$name\">$stylename</a></td><td>$bought</td><td>$sold</td><td>$per %</td> 
+   $out = $out."<tr class=\"odd gradeX\"><td><a href=\"catbreakdown2.php?name=$styleid\">$stylename</a></td><td>$bought</td><td>$sold</td><td>$per %</td> 
    </tr>";
            
     $i++;
