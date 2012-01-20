@@ -40,21 +40,19 @@ while ($i < $num)
 }
 $out = $out."<th>Total</th></tr></thead><tbody>";
 
-//echo "wah ";
-//print_r($country);
-
 
 $query="SELECT * from style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 echo mysql_error();
 $i = 0;
+echo $i;
+exit;
 while ($i <= $num)
 {
     $name=  mysql_result($result,$i,"name");
     $styleid=  mysql_result($result,$i,"id");
-  
-    $i++;
+    $i = $i+1;
 }
 
 echo $out."</tbody></table>";
