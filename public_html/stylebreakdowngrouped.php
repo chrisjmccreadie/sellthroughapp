@@ -66,7 +66,7 @@ while ($i < $num)
     {
          $ccount=  mysql_result($result2,$i2,"ccount");
           $country=  mysql_result($result2,$i2,"country");
-         //echo "$name : $country : $ccount<br/>";
+         echo "$name : $country : $ccount<br/>";
          
          
              //
