@@ -64,14 +64,149 @@ while ($i <= $num)
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
     $i2 = 0;
+    $aus = 0;
+    $aust = 0;
+    $aze = 0;
+    $bel = 0;
+    $can = 0
+    $chi = 0;
+    $cyp = 0;
+    $fra = 0;
+    $ger = 0;
+    $gre = 0;
+    $hon = 0;
+    $ice = 0;
+    $ire = 0;
+    $ita = 0;
+    $jap = 0;
+    $kor = 0;
+    $kuw = 0;
+    $mon = 0;
+    $net = 0;
+    $por = 0;
+    $rus = 0;
+    $sau = 0;
+    $sin = 0;
+    $sou = 0;
+    $spa = 0;
+    $st = 0;
+    $swi = 0;
+    $tur = 0;
+    $ukr = 0;
+    $ua=0;
+    $us = 0;
+    $uk = 0;
+    $us = 0;
     while ($i2 <= $num2)
     {
         $country = mysql_result($result2,$i2,"country");
         $i2++;
         
-     
+          switch (mysql_result($result,$i,"country")) 
+    {
+        case "AUSTRALIA":
+            $aus++;
+            break;
+        case "AUSTRIA":
+           $aust++;
+            break;
+        case "AZERBAIJAN":
+           $aze++;
+            break;
+        case "BELGIUM":
+            $bel++;
+            break;
+        case "CANADA":
+            $can++;
+            break;
+        case "CHINA":
+           $chi+++;
+            break;
+        case "CYPRUS":
+            $country[6]["count"] = mysql_result($result,$i,"ccount");
+            break;
+        case "FRANCE":
+            $country[7]["count"] = mysql_result($result,$i,"ccount");
+            break;
+        case "GERMANY":
+         $ger++;
+            break;
+        case "GREECE":
+           $gre++;
+            break;
+        case "HONG KONG":
+           $hon++;
+            break;
+        case "ICELAND":
+           $ice++;
+            break;
+        case "IRELAND":
+          $ire++;
+            break;
+        case "ITALY":
+            $ita++;
+            break;
+        case "JAPAN":
+           $jap++;
+            break;
+        case "KOREA":
+           $kor++;
+            break;
+        case "KUWAIT":$aus++;
+          $kuw++;
+            break;
+        case "MONACO":
+            $mon++;
+            break;
+        case "NETHERLANDS":
+         $net++;
+            break;
+        case "PORTUGAL":
+          $por++;
+            break;
+        case "RUSSIA":
+           $rus++;
+            break;
+        case "SAUDI ARABIA":
+            $country[21]["count"] = mysql_result($result,$i,"ccount");
+            break;
+        case "SINGAPORE":
+           $sin++;
+            break;
+        case "SOUTH AFRICA":
+           $sou++;
+            break;
+        case "SPAIN":
+            $spa++;
+            break;
+        case "ST. BARTHELEMY":
+            $st++;
+            break;
+        case "SWITZERLAND":
+          $swi++;
+            break;
+        case "TURKEY":
+            $tur++;
+            break;
+        case "UKRAINE":
+           $ukr++;
+            break;
+        case "UNITED ARAB EMIRATES":
+           $ua++;
+            break;
+        case "UNITED KINGDOM":
+           $uk++;
+            break;
+        case "USA":
+            $us++;
+            break;
+    } 
+    
+    
     }
-       $out = $out."<tr><td>$name</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    
+    
+       $out = $out."<tr><td>$name</td><td>$aus</td><td>$aust</td><td></td><td></td><td></td><td></td><td></td><td></td>
        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
