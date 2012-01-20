@@ -63,13 +63,14 @@ while ($i < $num)
     while ($i2 < $num2)
     {
          $name=  mysql_result($result,$i,"name");
+         echo $name;
           $i2 =  $i2+1;
     }
     
     $i = $i+1;
 }
 
-echo $out."</tbody></table>";
+//echo $out."</tbody></table>";
 
 ?>
 </body>
