@@ -74,100 +74,100 @@ while ($i < $num)
     {
         case "AUSTRALIA":
             $country[0]["count"] = $ccount;
-            break;
+           // break;
         case "AUSTRIA":
             $country[1]["count"] = $ccount;
-            break;
+           // break;
         case "AZERBAIJAN":
             $country[2]["count"] = $ccount;
-            break;
+         //   break;
         case "BELGIUM":
             $country[3]["count"] = $ccount;
-            break;
+         //   break;
         case "CANADA":
             $country[4]["count"] = $ccount;
-            break;
+          //  break;
         case "CHINA":
             $country[5]["count"] = $ccount;
-            break;
+          //  break;
         case "CYPRUS":
             $country[6]["count"] = $ccount;
             break;
         case "FRANCE":
             $country[7]["count"] = $ccount;
-            break;
+          //  break;
         case "GERMANY":
             $country[8]["count"] = $ccount;
-            break;
+           // break;
         case "GREECE":
             $country[9]["count"] = $ccount;
             break;
         case "HONG KONG":
             $country[10]["count"] = $ccount;
-            break;
+          //  break;
         case "ICELAND":
             $country[11]["count"] = $ccount;
             break;
         case "IRELAND":
             $country[12]["count"] = $ccount;
-            break;
+           // break;
         case "ITALY":
             $country[13]["count"] = $ccount;
-            break;
+           // break;
         case "JAPAN":
             $country[14]["count"] = $ccount;
-            break;
+           // break;
         case "KOREA":
             $country[15]["count"] = $ccount;
             break;
         case "KUWAIT":
             $country[16]["count"] = $ccount;
-            break;
+           // break;
         case "MONACO":
             $country[17]["count"] = $ccount;
-            break;
+          //  break;
         case "NETHERLANDS":
             $country[18]["count"] = $ccount;
-            break;
+            //break;
         case "PORTUGAL":
             $country[19]["count"] = $ccount;
             break;
         case "RUSSIA":
             $country[20]["count"] = $ccount;
-            break;
+           // break;
         case "SAUDI ARABIA":
             $country[21]["count"] = $ccount;
             break;
         case "SINGAPORE":
             $country[22]["count"] = $ccount;
-            break;
+            //break;
         case "SOUTH AFRICA":
             $country[23]["count"] = $ccount;
-            break;
+           // break;
         case "SPAIN":
             $country[24]["count"] = $ccount;
-            break;
+           // break;
         case "ST. BARTHELEMY":
             $country[25]["count"] = $ccount;
-            break;
+            //break;
         case "SWITZERLAND":
             $country[26]["count"] = $ccount;
             break;
         case "TURKEY":
             $country[27]["count"] = $ccount;
-            break;
+           // break;
         case "UKRAINE":
             $country[28]["count"] = $ccount;
-            break;
+           // break;
         case "UNITED ARAB EMIRATES":
             $country[29]["count"] = $ccount;
             break;
         case "UNITED KINGDOM":
             $country[30]["count"] = $ccount;
-            break;
+          // break;
         case "USA":
             $country[31]["count"] = $ccount;
-            break;
+           // break;
     }
          
          
