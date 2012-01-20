@@ -52,8 +52,8 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 
 $query="SELECT sellthrough2.style, sellthrough2.country, COUNT( sellthrough2.country ) AS ccount, style.name
 FROM  `sellthrough2` 
-LEFT JOIN style ON sellthrough2.styleid = style.id
-GROUP BY style.name
+
+GROUP BY sellthrough2.styleid,sellthrough2.country, sellthrough2.style,
 ORDER BY sellthrough2.style, sellthrough2.country, sellthrough2.styleid
 ";
 
