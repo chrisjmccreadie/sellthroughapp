@@ -68,7 +68,17 @@ while ($i <= $num)
     {
         $country = mysql_result($result2,$i2,"country");
         $i2++;
+        
+     
     }
+       $out = $out."<tr><td>$name</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+    
     $i ++;
 }
 echo $out."</tbody></table>";
