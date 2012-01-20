@@ -123,10 +123,10 @@ switch (mysql_result($result,$i,"country"))
            $chi++;
             break;
         case "CYPRUS":
-            $country[6]["count"] = mysql_result($result,$i,"ccount");
+           $cyp++;
             break;
         case "FRANCE":
-            $country[7]["count"] = mysql_result($result,$i,"ccount");
+            $fra++;
             break;
         case "GERMANY":
          $ger++;
