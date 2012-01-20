@@ -72,8 +72,8 @@ while ($i < $num)
           //switch
           
            $rsold = mysql_result($result2,$i2,"rsold");
- //echo $rsold;
- if ($sold == 0)
+        //echo $rsold;
+         if ($sold == 0)
         $ccount = $rsold;
           
             switch ($countryo) 
