@@ -52,7 +52,7 @@ $out = $out."<th>Total</th></tr></thead><tbody>";
 $query="SELECT * from style";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
-    echo mysql_error();
+echo mysql_error();
 $i = 0;
 while ($i <= $num)
 {
@@ -65,42 +65,6 @@ while ($i <= $num)
     $num2=mysql_numrows($result2);
     echo mysql_error();
     $i2 = 0;
-    /*
-    
-    $aus = 0;
-    $aust = 0;
-    $aze = 0;
-    $bel = 0;
-    $can = 0;
-    $chi = 0;
-    $cyp = 0;
-    $fra = 0;
-    $ger = 0;
-    $gre = 0;
-    $hon = 0;
-    $ice = 0;
-    $ire = 0;
-    $ita = 0;
-    $jap = 0;
-    $kor = 0;
-    $kuw = 0;
-    $mon = 0;
-    $net = 0;
-    $por = 0;
-    $rus = 0;
-    $sau = 0;
-    $sin = 0;
-    $sou = 0;
-    $spa = 0;
-    $st = 0;
-    $swi = 0;
-    $tur = 0;
-    $ukr = 0;
-    $ua=0;
-    $us = 0;
-    $uk = 0;
-    $us = 0;
-    */
     while ($i2 <= $num2)
     {
         $country = mysql_result($result2,$i2,"country");
@@ -108,7 +72,7 @@ while ($i <= $num)
          echo "$name : $country : $ccount";
          $i2++;
     }
-    $i ++;
+$i ++;
 }
 echo $out."</tbody></table>";
 
