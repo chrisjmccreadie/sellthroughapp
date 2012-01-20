@@ -73,100 +73,100 @@ while ($i < $num)
                  switch ($country) 
     {
         case "AUSTRALIA":
-            $country[0]["count"] = mysql_result($result,$i,"ccount");
+            $country[0]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "AUSTRIA":
-            $country[1]["count"] = mysql_result($result,$i,"ccount");
+            $country[1]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "AZERBAIJAN":
-            $country[2]["count"] = mysql_result($result,$i,"ccount");
+            $country[2]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "BELGIUM":
-            $country[3]["count"] = mysql_result($result,$i,"ccount");
+            $country[3]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "CANADA":
-            $country[4]["count"] = mysql_result($result,$i,"ccount");
+            $country[4]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "CHINA":
-            $country[5]["count"] = mysql_result($result,$i,"ccount");
+            $country[5]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "CYPRUS":
-            $country[6]["count"] = mysql_result($result,$i,"ccount");
+            $country[6]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "FRANCE":
-            $country[7]["count"] = mysql_result($result,$i,"ccount");
+            $country[7]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "GERMANY":
-            $country[8]["count"] = mysql_result($result,$i,"ccount");
+            $country[8]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "GREECE":
-            $country[9]["count"] = mysql_result($result,$i,"ccount");
+            $country[9]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "HONG KONG":
-            $country[10]["count"] = mysql_result($result,$i,"ccount");
+            $country[10]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "ICELAND":
-            $country[11]["count"] = mysql_result($result,$i,"ccount");
+            $country[11]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "IRELAND":
-            $country[12]["count"] = mysql_result($result,$i,"ccount");
+            $country[12]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "ITALY":
-            $country[13]["count"] = mysql_result($result,$i,"ccount");
+            $country[13]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "JAPAN":
-            $country[14]["count"] = mysql_result($result,$i,"ccount");
+            $country[14]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "KOREA":
             $country[15]["count"] = mysql_result($result,$i,"ccount");
             break;
         case "KUWAIT":
-            $country[16]["count"] = mysql_result($result,$i,"ccount");
+            $country[16]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "MONACO":
-            $country[17]["count"] = mysql_result($result,$i,"ccount");
+            $country[17]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "NETHERLANDS":
-            $country[18]["count"] = mysql_result($result,$i,"ccount");
+            $country[18]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "PORTUGAL":
-            $country[19]["count"] = mysql_result($result,$i,"ccount");
+            $country[19]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "RUSSIA":
-            $country[20]["count"] = mysql_result($result,$i,"ccount");
+            $country[20]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "SAUDI ARABIA":
-            $country[21]["count"] = mysql_result($result,$i,"ccount");
+            $country[21]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "SINGAPORE":
-            $country[22]["count"] = mysql_result($result,$i,"ccount");
+            $country[22]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "SOUTH AFRICA":
-            $country[23]["count"] = mysql_result($result,$i,"ccount");
+            $country[23]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "SPAIN":
-            $country[24]["count"] = mysql_result($result,$i,"ccount");
+            $country[24]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "ST. BARTHELEMY":
-            $country[25]["count"] = mysql_result($result,$i,"ccount");
+            $country[25]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "SWITZERLAND":
-            $country[26]["count"] = mysql_result($result,$i,"ccount");
+            $country[26]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "TURKEY":
-            $country[27]["count"] = mysql_result($result,$i,"ccount");
+            $country[27]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "UKRAINE":
-            $country[28]["count"] = mysql_result($result,$i,"ccount");
+            $country[28]["count"] =mysql_result($result2,$i2,"ccount");
             break;
         case "UNITED ARAB EMIRATES":
-            $country[29]["count"] = mysql_result($result,$i,"ccount");
+            $country[29]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "UNITED KINGDOM":
-            $country[30]["count"] = mysql_result($result,$i,"ccount");
+            $country[30]["count"] = mysql_result($result2,$i2,"ccount");
             break;
         case "USA":
-            $country[31]["count"] = mysql_result($result,$i,"ccount");
+            $country[31]["count"] =mysql_result($result2,$i2,"ccount");
             break;
     }
          
