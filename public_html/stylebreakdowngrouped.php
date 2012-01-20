@@ -40,7 +40,6 @@ while ($i < $num)
   //  echo  mysql_result($result,$i,"country")."</br>";
         $country[$i]["name"] = mysql_result($result,$i,"country");
         $country[$i]["count"] = 0;
-
         $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
         $out = $out."<th>%</th>";
     $i++;   
@@ -100,8 +99,7 @@ while ($i <= $num)
     while ($i2 <= $num2)
     {
         $country = mysql_result($result2,$i2,"country");
-        
-        
+        /*
         switch ($country) 
         {
              case "AUSTRALIA":
@@ -200,13 +198,21 @@ while ($i <= $num)
             case "USA":
                 $us++;
                 break;
-        } 
-       $i2++;
-    
+        }
+        */
+        
+        $i2++;
+
+        /*
+        $out = $out."<tr><td>$name</td><td>$aus</td><td>$aust</td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+      " <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+      " <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+        */
     }
-    
-    
-      
     $i ++;
 }
 echo $out."</tbody></table>";
