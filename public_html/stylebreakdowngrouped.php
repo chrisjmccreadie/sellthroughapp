@@ -102,8 +102,8 @@ while ($i <= $num)
         $country = mysql_result($result2,$i2,"country");
         $i2++;
         
-switch ($country) 
-    {
+        switch ($country) 
+        {
         case "AUSTRALIA":
             $aus++;
             break;
@@ -200,19 +200,19 @@ switch ($country)
         case "USA":
             $us++;
             break;
-    } 
+        } 
     
     
     }
     
     
        $out = $out."<tr><td>$name</td><td>$aus</td><td>$aust</td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+      " <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+       "<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>".
+      " <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
     
     $i ++;
 }
