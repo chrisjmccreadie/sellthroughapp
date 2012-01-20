@@ -27,7 +27,7 @@ mysql_connect("sellthroughapp.mysql.fluxflex.com",$username,$password);
 //close the database 
 
 
-$query = "select name,sold,rsold from sellthrough2 group by styleid";
+$query = "select name,sold,rsold,styleid from sellthrough2 group by styleid";
 $result=mysql_query($query);
 $num=mysql_numrows($result);
 
