@@ -46,8 +46,7 @@ $result=mysql_query($query);
 $num=mysql_numrows($result);
 echo mysql_error();
 $i = 0;
-echo $i;
-exit;
+
 while ($i <= $num)
 {
     $name=  mysql_result($result,$i,"name");
