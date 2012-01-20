@@ -65,16 +65,16 @@ while ($i < $num)
     {
          $ccount=  mysql_result($result2,$i2,"ccount");
           $countryo=  mysql_result($result2,$i2,"country");
-        
-         
-          $i2 =  $i2+1;
-          
           //switch
           $ccount = mysql_result($result2,$i2,"sold"); 
           $rsold=  mysql_result($result2,$i2,"rsold");
         //echo $rsold;
          if ( $ccount == 0)
-              $ccount = $rsold;
+              $ccount = $rsold;   
+         
+          $i2 =  $i2+1;
+          
+     
           
             switch ($countryo) 
         {
