@@ -102,6 +102,8 @@ while ($i < $num)
            
     $i++;
 }
+
+/*
 $pert = $pertotal / $i * 100;
 $perz = $perzero / $i * 100;
 $storet = $i /100 * 60;
@@ -117,7 +119,7 @@ $averageb = number_format($averageb,0);
 echo "Stores Added $pertotal ($pert)</br>";
 echo "Store Not Added $perzero ($perz)</br>";
 echo "Stores to hit target $storet 60%</br>";
-
+*/
 echo $out."</tbody><tfoot><tr><td>Averages<td>$averageb</td><td>$averages</td><td>$averagep %</td><td><input type=\"submit\" value=\"Submit\"/></td></tr></tfoot></table>";
 ?>
 </form>
