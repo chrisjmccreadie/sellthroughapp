@@ -73,7 +73,7 @@ while ($i < $num)
             switch ($country) 
             {
                 case "AUSTRALIA":
-                $country[0]["count"] = $ccount
+                $country[0]["count"] = $ccount;
                 break;
        
             }
