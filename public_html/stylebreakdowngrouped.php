@@ -63,7 +63,7 @@ while ($i < $num)
     while ($i2 < $num2)
     {
          $ccount=  mysql_result($result2,$i2,"ccount");
-         echo $name;
+         echo $ccount;
           $i2 =  $i2+1;
     }
     
