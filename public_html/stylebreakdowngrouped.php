@@ -70,8 +70,8 @@ while ($i < $num)
           $i2 =  $i2+1;
           
           //switch
-          
-           $rsold = mysql_result($result2,$i2,"rsold");
+         $sold = mysql_result($result2,$i2,"sold"); 
+          $rsold=  mysql_result($result2,$i2,"rsold");
         //echo $rsold;
          if ($sold == 0)
         $ccount = $rsold;
