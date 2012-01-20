@@ -34,13 +34,28 @@ $i = 0;
 $out = $out."<tr><th>Name</th>";
 while ($i < $num)
 {
-  //  echo  mysql_result($result,$i,"country")."</br>";
-      
         $out = $out."<th>".mysql_result($result,$i,"country")."</th>";
         $out = $out."<th>%</th>";
     $i++;   
 }
 $out = $out."<th>Total</th></tr></thead><tbody>";
+
+//echo "wah ";
+//print_r($country);
+
+
+$query="SELECT * from style";
+$result=mysql_query($query);
+$num=mysql_numrows($result);
+echo mysql_error();
+$i = 0;
+while ($i <= $num)
+{
+    $name=  mysql_result($result,$i,"name");
+    $styleid=  mysql_result($result,$i,"id");
+  
+    $i++;
+}
 
 echo $out."</tbody></table>";
 
