@@ -64,7 +64,7 @@ $i = 0;
 $style = "";
 while ($i < $num)
 {
-    if ($style !=  mysql_result($result,$i,"style"))
+    if ($style !=  mysql_result($result,$i,"name"))
     {
         if ($style != "")
         {
