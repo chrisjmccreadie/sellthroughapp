@@ -66,7 +66,7 @@ while ($i < $num)
     {
          $ccount=  mysql_result($result2,$i2,"ccount");
           $countryo=  mysql_result($result2,$i2,"country");
-         echo "$name : $countryo : $ccount<br/>";
+        
          
           $i2 =  $i2+1;
           
@@ -175,7 +175,14 @@ while ($i < $num)
           
           
     }
-    
+     echo "$name : $countryo : ";
+     $counto = 0
+     while ($counto <= count($country)
+     {
+        echo $country[$counto]["count"];
+        $counto++;
+     }
+     echo "</br>";
     $i = $i+1;
 }
 
