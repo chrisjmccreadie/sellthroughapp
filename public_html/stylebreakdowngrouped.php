@@ -201,7 +201,7 @@ while ($i <= $num)
                 $us++;
                 break;
         } 
-    
+       $i2++;
     
     }
     
