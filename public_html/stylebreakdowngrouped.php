@@ -120,7 +120,7 @@ while ($i <= $num)
             $can++;
             break;
         case "CHINA":
-           $chi+++;
+           $chi++;
             break;
         case "CYPRUS":
             $country[6]["count"] = mysql_result($result,$i,"ccount");
