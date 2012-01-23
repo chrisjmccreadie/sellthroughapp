@@ -234,7 +234,7 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
     $i = $i+1;
 }
 
-echo $out."</tbody></table>dd";
+echo $out."</tbody></table>";
 ?>
 </body>
 </html>
