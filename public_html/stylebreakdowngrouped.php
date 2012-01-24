@@ -203,7 +203,7 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
             $ccount =  $country[30]["count"]+1;
             $country[30]["count"] = $ccount;
             break;
-        case "USA":21
+        case "USA":
             $ccount =  $country[31]["count"]+1;
             $country[31]["count"] = $ccount;
             break;
