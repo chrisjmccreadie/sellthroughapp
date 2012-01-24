@@ -81,130 +81,130 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
             switch ($countryo) 
         {
         case "AUSTRALIA":
-           $ccount = $ccount+ $country[0]["count"];
+           $ccount = $country[0]["count"]+1;
             $country[0]["count"] = $ccount;
             break;
         case "AUSTRIA":
-          $ccount = $ccount+ $country[1]["count"];
+          $ccount = $country[1]["count"]+1;
             $country[1]["count"] = $ccount;
             break;
         case "AZERBAIJAN":
-          $ccount = $ccount+ $country[2]["count"];
+          $ccount = $country[2]["count"]+1;
             $country[2]["count"] = $ccount;
             break;
         case "BELGIUM":
-             $ccount = $ccount+ $country[3]["count"];
+             $ccount = $country[3]["count"]+1;
             $country[3]["count"] = $ccount;
             break;
         case "CANADA":
-            $ccount = $ccount+ $country[4]["count"];
+            $ccount = $country[4]["count"]+1;
             $country[4]["count"] = $ccount;
             break;
         case "CHINA":
-           $ccount = $ccount+ $country[5]["count"];
+           $ccount = $country[5]["count"]+1;
             $country[5]["count"] = $ccount;
             break;
         case "CYPRUS":
-            $ccount = $ccount+ $country[6]["count"];
+            $ccount =$country[6]["count"]+1;
             $country[6]["count"] = $ccount;
             break;
         case "FRANCE":
-             $ccount = $ccount+ $country[7]["count"];
+             $ccount = $country[7]["count"]+1;
             $country[7]["count"] = $ccount;
             break;
         case "GERMANY":
-            $ccount = $ccount+ $country[8]["count"];
+            $ccount =  $country[8]["count"]+1;
             $country[8]["count"] = $ccount;
             break;
         case "GREECE":
-            $ccount = $ccount+ $country[9]["count"];
+            $ccount =  $country[9]["count"]+1;
             $country[9]["count"] = $ccount;
             break;
         case "HONG KONG":
-            $ccount = $ccount+ $country[10]["count"];
+            $ccount =  $country[10]["count"]+1;
             $country[10]["count"] = $ccount;
             break;
         case "ICELAND":
-           $ccount = $ccount+ $country[11]["count"];
+            $ccount =  $country[11]["count"]+1;
             $country[11]["count"] = $ccount;
             break;
         case "IRELAND":
-            $ccount = $ccount+ $country[12]["count"];
+            $ccount =  $country[12]["count"]+1;
             $country[12]["count"] = $ccount;
             break;
         case "ITALY":
-            $ccount = $ccount+ $country[13]["count"];
+            $ccount =  $country[13]["count"]+1;
             $country[13]["count"] = $ccount;
             break;
         case "JAPAN":
-            $ccount = $ccount+ $country[14]["count"];
+            $ccount =  $country[14]["count"]+1;
             $country[14]["count"] = $ccount;
             break;
         case "KOREA":
-           $ccount = $ccount+ $country[15]["count"];
+            $ccount =  $country[15]["count"]+1;
             $country[15]["count"] = $ccount;
         case "KUWAIT":
-            $ccount = $ccount+ $country[16]["count"];
+            $ccount =  $country[16]["count"]+1;
             $country[16]["count"] = $ccount;
             break;
         case "MONACO":
-            $ccount = $ccount+ $country[17]["count"];
+            $ccount =  $country[17]["count"]+1;
             $country[17]["count"] = $ccount;
             break;
         case "NETHERLANDS":
-          $ccount = $ccount+ $country[18]["count"];
+            $ccount =  $country[18]["count"]+1;
             $country[18]["count"] = $ccount;
             break;
         case "PORTUGAL":
-            $ccount = $ccount+ $country[19]["count"];
+            $ccount =  $country[19]["count"]+1;
             $country[19]["count"] = $ccount;
             break;
         case "RUSSIA":
-             $ccount = $ccount+ $country[20]["count"];
+            $ccount =  $country[20]["count"]+1;
             $country[20]["count"] = $ccount;
             break;
         case "SAUDI ARABIA":
-            $ccount = $ccount+ $country[21]["count"];
+            $ccount =  $country[21]["count"]+1;
             $country[21]["count"] = $ccount;
             break;
         case "SINGAPORE":
-            $ccount = $ccount+ $country[22]["count"];
+            $ccount =  $country[22]["count"]+1;
             $country[22]["count"] = $ccount;
             break;
         case "SOUTH AFRICA":
-             $ccount = $ccount+ $country[23]["count"];
+            $ccount =  $country[23]["count"]+1;
             $country[23]["count"] = $ccount;
             break;
         case "SPAIN":
-            $ccount = $ccount+ $country[24]["count"];
+            $ccount =  $country[24]["count"]+1;
             $country[24]["count"] = $ccount;
             break;
         case "ST. BARTHELEMY":
-            $ccount = $ccount+ $country[25]["count"];
+            $ccount =  $country[25]["count"]+1;
             $country[25]["count"] = $ccount;
             break;
         case "SWITZERLAND":
-          $ccount = $ccount+ $country[26]["count"];
+            $ccount =  $country[26]["count"]+1;
             $country[26]["count"] = $ccount;
             break;
         case "TURKEY":
-          $ccount = $ccount+ $country[27]["count"];
+            $ccount =  $country[27]["count"]+1;
             $country[27]["count"] = $ccount;
             break;
         case "UKRAINE":
-           $ccount = $ccount+ $country[28]["count"];
+            $ccount =  $country[28]["count"]+1;
             $country[28]["count"] = $ccount;
             break;
         case "UNITED ARAB EMIRATES":
-            $ccount = $ccount+ $country[29]["count"];
+            $ccount =  $country[29]["count"]+1;
             $country[29]["count"] = $ccount;
             break;
         case "UNITED KINGDOM":
-            $ccount = $ccount+ $country[30]["count"];
+            $ccount =  $country[30]["count"]+1;
             $country[30]["count"] = $ccount;
             break;
-        case "USA":
-           $ccount = $ccount+ $country[31]["count"];
+        case "USA":21
+            $ccount =  $country[31]["count"]+1;
             $country[31]["count"] = $ccount;
             break;
     }
