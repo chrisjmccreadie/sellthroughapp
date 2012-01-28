@@ -178,7 +178,7 @@ while ($i < $num)
          //exit;
     }
     
-    
+    print_r($country);
     $i = $i+1;
 }
 
