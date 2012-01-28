@@ -174,15 +174,22 @@ while ($i < $num)
          }
        
        //  echo "$i2 $countryo : count $ccount , sold : $sold, rsold : $rsold  </br>";
-         
+         $total = $total + $ccount
          //exit;
     }
-    
+  $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
+      
     foreach($country as $item )
-    {
-        echo "Country :".$item["name"]." Count ".$item["count"]  ;  
-    }($country);
-    $i = $i+1;
+            {
+                $per = 0;
+                $out = $out."<td>".$item["count"]."</td>";
+                $per = $item["count"] /$total * 100;
+                $per = number_format($per,0);
+                $out = $out."<td>".$per."%</td>";
+                $item["count"] = 0;   
+            }
+            $out = $out."<td>$total</td></tr>";
+ $i = $i+1;
 }
 
 echo $out."</tbody></table>";
