@@ -174,7 +174,7 @@ while ($i < $num)
          }
        
        //  echo "$i2 $countryo : count $ccount , sold : $sold, rsold : $rsold  </br>";
-         $total = $total + $ccount
+         $total = $total + $ccount;
          //exit;
     }
   $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
