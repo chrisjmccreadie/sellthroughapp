@@ -212,7 +212,7 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
           
           
     }
-    
+    print_r($country);
       $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
       $total = 0;
       foreach($country as $item )
