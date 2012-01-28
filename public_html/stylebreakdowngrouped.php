@@ -61,7 +61,10 @@ while ($i < $num)
  echo $query2."</br>";
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
+    echo $num2;
+    
     echo mysql_error();
+    exit;
     $i2 = 0;
     while ($i2 < $num2)
     {
@@ -81,13 +84,6 @@ while ($i < $num)
           
           
     }
-      $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
-      $total = 0;
-      foreach($country as $item )
-      {
-            //$total = $total+$item["count"]  ;
-      }
-     
     $i = $i+1;
 }
 
