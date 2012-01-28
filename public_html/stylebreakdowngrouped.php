@@ -70,9 +70,10 @@ while ($i < $num)
          if ( $ccount == 0)
               $ccount = $rsold;   
          
-         echo "$country : count $ccount</br>";
           $i2 =  $i2+1;       
-          exit;
+         echo "$i2 $countryo : count $ccount</br>";
+         
+         exit;
     }
     $i = $i+1;
 }
