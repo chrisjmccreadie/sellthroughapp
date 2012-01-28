@@ -178,7 +178,10 @@ while ($i < $num)
          //exit;
     }
     
-    print_r($country);
+    foreach($country as $item )
+    {
+        echo "Country :".$item["name"]." Count ".$item["count"]  ;  
+    }($country);
     $i = $i+1;
 }
 
