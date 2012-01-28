@@ -64,14 +64,14 @@ while ($i < $num)
        //  $ccount=  mysql_result($result2,$i2,"ccount");
           $countryo=  mysql_result($result2,$i2,"country");
           //switch
-          $ccount = mysql_result($result2,$i2,"sold"); 
+          $sold = mysql_result($result2,$i2,"sold"); 
           $rsold=  mysql_result($result2,$i2,"rsold");
         //echo $rsold;
-         if ( $ccount == 0)
+         if ( $sold == 0)
               $ccount = $rsold;   
          
           $i2 =  $i2+1;       
-         echo "$i2 $countryo : count $ccount</br>";
+         echo "$i2 $countryo : count $ccount , sold : $sold, rsold : $rsold  </br>";
          
          exit;
     }
