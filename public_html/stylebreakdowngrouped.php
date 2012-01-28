@@ -52,14 +52,27 @@ while ($i < $num)
 {
     $name=  mysql_result($result,$i,"name");
     $styleid=  mysql_result($result,$i,"id");
-    $query2 = "SELECT count(id),country,count(rsold),count(sold) FROM `sellthrough2` WHERE `styleid` = $styleid group by country";
+    $query2 = "SELECT country,count(rsold),count(sold) FROM `sellthrough2` WHERE `styleid` = $styleid group by country";
     echo $query2."</br>";
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
     echo $num2;
     echo mysql_error();
     $i2 = 0;
-    
+    while ($i2 < $num2)
+    {
+       //  $ccount=  mysql_result($result2,$i2,"ccount");
+          $countryo=  mysql_result($result2,$i2,"country");
+          //switch
+          $ccount = mysql_result($result2,$i2,"sold"); 
+          $rsold=  mysql_result($result2,$i2,"rsold");
+        //echo $rsold;
+         if ( $ccount == 0)
+              $ccount = $rsold;   
+         
+         echo "$country : count $ccount</br>";
+          $i2 =  $i2+1;          
+    }
     $i = $i+1;
 }
 
