@@ -59,6 +59,7 @@ while ($i < $num)
     echo $num2;
     echo mysql_error();
     $i2 = 0;
+    $total = 0;
     while ($i2 < $num2)
     {
          $ccount = 0;
@@ -177,18 +178,17 @@ while ($i < $num)
          $total = $total + $ccount;
          //exit;
     }
-  $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
-      
+    $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";  
     foreach($country as $item )
-            {
-                $per = 0;
-                $out = $out."<td>".$item["count"]."</td>";
-                $per = $item["count"] /$total * 100;
-                $per = number_format($per,0);
-                $out = $out."<td>".$per."%</td>";
-                $item["count"] = 0;   
-            }
-            $out = $out."<td>$total</td></tr>";
+    {
+        $per = 0;
+        $out = $out."<td>".$item["count"]."</td>";
+        $per = $item["count"] /$total * 100;
+        $per = number_format($per,0);
+        $out = $out."<td>".$per."%</td>";
+        $item["count"] = 0;   
+    }
+    $out = $out."<td>$total</td></tr>";
  $i = $i+1;
 }
 
