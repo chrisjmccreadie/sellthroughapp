@@ -212,7 +212,7 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
           
           
     }
-    print_r($country);
+  //  print_r($country);
       $out = $out."<tr class=\"odd gradeX\"><td>$name</td>";
       $total = 0;
       foreach($country as $item )
@@ -230,6 +230,11 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
             }
             $out = $out."<td>$total</td></tr>";
     
+    //clear it
+      foreach($country as $item )
+      {
+            $item["count"]  =0 ;
+      }
     
     $i = $i+1;
 }
