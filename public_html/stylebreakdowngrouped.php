@@ -53,7 +53,7 @@ while ($i < $num)
     $name=  mysql_result($result,$i,"name");
     $styleid=  mysql_result($result,$i,"id");
     $query2 = "SELECT country,count(rsold) as rsold,count(sold) as sold FROM `sellthrough2` WHERE `styleid` = '$styleid' group by country";
-    echo $query2."</br>";
+    //echo $query2."</br>";
     $result2=mysql_query($query2);
     $num2=mysql_numrows($result2);
     echo $num2;
