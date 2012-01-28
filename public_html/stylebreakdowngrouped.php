@@ -71,7 +71,8 @@ while ($i < $num)
               $ccount = $rsold;   
          
          echo "$country : count $ccount</br>";
-          $i2 =  $i2+1;          
+          $i2 =  $i2+1;       
+          exit;
     }
     $i = $i+1;
 }
