@@ -61,6 +61,7 @@ while ($i < $num)
     $i2 = 0;
     while ($i2 < $num2)
     {
+         $ccount = 0;
        //  $ccount=  mysql_result($result2,$i2,"ccount");
           $countryo=  mysql_result($result2,$i2,"country");
           //switch
