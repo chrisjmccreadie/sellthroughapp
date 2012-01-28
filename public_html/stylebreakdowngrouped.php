@@ -171,7 +171,7 @@ while ($i < $num)
         case "USA":
             $country[31]["count"] = $ccount;
             break;
-    }
+         }
        
        //  echo "$i2 $countryo : count $ccount , sold : $sold, rsold : $rsold  </br>";
          
