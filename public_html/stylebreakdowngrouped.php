@@ -68,12 +68,14 @@ while ($i < $num)
           $rsold=  mysql_result($result2,$i2,"rsold");
         //echo $rsold;
          if ( $sold == 0)
-              $ccount = $rsold;   
+              $ccount = $rsold
+         else
+             $ccount = $sold;
          
           $i2 =  $i2+1;       
          echo "$i2 $countryo : count $ccount , sold : $sold, rsold : $rsold  </br>";
          
-         exit;
+         //exit;
     }
     $i = $i+1;
 }
