@@ -69,7 +69,7 @@ while ($i < $num)
           $rsold=  mysql_result($result2,$i2,"rsold");
         //echo $rsold;
          if ( $sold == 0)
-              $ccount = $rsold
+              $ccount = $rsold;
          else
              $ccount = $sold;
          
