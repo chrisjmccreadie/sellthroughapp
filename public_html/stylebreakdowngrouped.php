@@ -74,6 +74,7 @@ $query2 =" SELECT style, country, sold,rsold from sellthrough2 where styleid='$s
          if ( $ccount == 0)
               $ccount = $rsold;   
          
+         echo "count $ccount</br>";
           $i2 =  $i2+1;
           
      
